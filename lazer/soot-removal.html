@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- header start -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="/"><img src="./assets/images/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                            <path d="M1 1L7 7L13 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Case studies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Rent or buy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                  </li>
+                </ul>
+                <div class="right-social-media">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 9 18" fill="none">
+                            <path d="M5.7809 10.2388H7.84551L8.67135 6.9354H5.7809V5.28371C5.7809 4.43361 5.7809 3.63203 7.43258 3.63203H8.67135V0.857278C8.40237 0.82156 7.38551 0.741577 6.31183 0.741577C4.07008 0.741577 2.47753 2.10988 2.47753 4.6228V6.9354H0V10.2388H2.47753V17.2584H5.7809V10.2388Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
+                            <path d="M8.86171 0.393631C9.30279 0.396059 10.4064 0.406729 11.5789 0.453695L11.9946 0.471822C13.1752 0.527715 14.3547 0.623199 14.9397 0.786319C15.7201 1.00554 16.3334 1.6452 16.5407 2.45602C16.8708 3.74359 16.9121 6.25662 16.9172 6.86477L16.918 6.99079V6.99963C16.918 6.99963 16.918 7.00269 16.918 7.00855L16.9172 7.13457C16.9121 7.74272 16.8708 10.2558 16.5407 11.5433C16.3305 12.3571 15.7172 12.9968 14.9397 13.213C14.3547 13.3761 13.1752 13.4716 11.9946 13.5275L11.5789 13.5456C10.4064 13.5926 9.30279 13.6032 8.86171 13.6057L8.66813 13.6064H8.65954C8.65954 13.6064 8.65665 13.6064 8.65095 13.6064L8.45754 13.6057C7.52401 13.6006 3.62076 13.5584 2.37934 13.213C1.599 12.9938 0.98566 12.3541 0.778332 11.5433C0.448268 10.2558 0.407009 7.74272 0.401855 7.13457V6.86477C0.407009 6.25662 0.448268 3.74359 0.778332 2.45602C0.988534 1.64219 1.60187 1.00254 2.37934 0.786319C3.62076 0.440894 7.52401 0.398768 8.45754 0.393631H8.86171ZM7.00786 4.10921V9.89008L11.9629 6.99963L7.00786 4.10921Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <path d="M3.95136 2.21948C3.95106 2.89197 3.54306 3.49713 2.91977 3.7496C2.29647 4.00208 1.58234 3.85145 1.11411 3.36874C0.645885 2.88603 0.51707 2.16763 0.7884 1.55232C1.05974 0.936997 1.67704 0.54762 2.34923 0.567795C3.24202 0.594594 3.95177 1.32628 3.95136 2.21948ZM4.00091 5.09341H0.697541V15.4329H4.00091V5.09341ZM9.22025 5.09341H5.93338V15.4329H9.18722V10.0072C9.18722 6.98457 13.1265 6.70378 13.1265 10.0072V15.4329H16.3886V8.88401C16.3886 3.78858 10.5581 3.97853 9.18722 6.4808L9.22025 5.09341Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                            <path d="M9.22581 0.741882C10.1552 0.743418 10.6262 0.74834 11.0332 0.760456L11.1935 0.765691C11.3786 0.772273 11.5613 0.780532 11.7815 0.790855C12.6603 0.831461 13.2598 0.970475 13.7863 1.17487C14.3306 1.38478 14.7903 1.66831 15.2493 2.12735C15.7077 2.58638 15.9913 3.04747 16.2019 3.59046C16.4055 4.11625 16.5446 4.71637 16.5859 5.59519C16.5957 5.81542 16.6036 5.9981 16.6102 6.18329L16.6154 6.34357C16.6274 6.7505 16.633 7.22155 16.6347 8.15099L16.6353 8.76674C16.6354 8.84197 16.6354 8.9196 16.6354 8.99971L16.6353 9.23268L16.6349 9.84851C16.6333 10.7779 16.6284 11.249 16.6163 11.6559L16.611 11.8162C16.6045 12.0014 16.5962 12.1841 16.5859 12.4042C16.5452 13.2831 16.4055 13.8825 16.2019 14.409C15.9919 14.9534 15.7077 15.4131 15.2493 15.8721C14.7903 16.3305 14.3285 16.614 13.7863 16.8246C13.2598 17.0283 12.6603 17.1673 11.7815 17.2086C11.5613 17.2184 11.3786 17.2264 11.1935 17.2329L11.0332 17.2381C10.6262 17.2502 10.1552 17.2557 9.22581 17.2575L8.60998 17.2581C8.53474 17.2581 8.45711 17.2581 8.37701 17.2581H8.14404L7.5282 17.2576C6.5988 17.2561 6.12776 17.2511 5.72082 17.239L5.56054 17.2338C5.37535 17.2272 5.19267 17.2189 4.97245 17.2086C4.09362 17.168 3.49488 17.0283 2.96772 16.8246C2.42403 16.6147 1.96363 16.3305 1.5046 15.8721C1.04557 15.4131 0.76272 14.9513 0.55213 14.409C0.347734 13.8825 0.209405 13.2831 0.168113 12.4042C0.158302 12.1841 0.1503 12.0014 0.143817 11.8162L0.138622 11.6559C0.12654 11.249 0.121032 10.7779 0.119248 9.84851L0.119141 8.15099C0.120677 7.22155 0.12559 6.7505 0.137706 6.34357L0.14295 6.18329C0.149532 5.9981 0.15779 5.81542 0.168113 5.59519C0.208712 4.71567 0.347734 4.11694 0.55213 3.59046C0.762026 3.04678 1.04557 2.58638 1.5046 2.12735C1.96363 1.66831 2.42473 1.38546 2.96772 1.17487C3.49419 0.970475 4.09293 0.832147 4.97245 0.790855C5.19267 0.781052 5.37535 0.77305 5.56054 0.766567L5.72082 0.761372C6.12776 0.749282 6.5988 0.743773 7.5282 0.74199L9.22581 0.741882ZM8.37701 4.87052C6.09527 4.87052 4.24778 6.72002 4.24778 8.99971C4.24778 11.2814 6.09728 13.1289 8.37701 13.1289C10.6587 13.1289 12.5062 11.2794 12.5062 8.99971C12.5062 6.71801 10.6567 4.87052 8.37701 4.87052ZM8.37701 6.5222C9.74535 6.5222 10.8545 7.63104 10.8545 8.99971C10.8545 10.368 9.74568 11.4772 8.37701 11.4772C7.00867 11.4772 5.89946 10.3685 5.89946 8.99971C5.89946 7.63137 7.00826 6.5222 8.37701 6.5222ZM12.7127 3.63175C12.1434 3.63175 11.6804 4.09415 11.6804 4.66335C11.6804 5.23257 12.1428 5.69567 12.7127 5.69567C13.2818 5.69567 13.745 5.23329 13.745 4.66335C13.745 4.09415 13.2811 3.63104 12.7127 3.63175Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Banner start -->
+    <section class="service-banner soot-banner">
+        <div class="container">
+            <div class="sb-cont">
+                <h3>Soot Removal</h3>
+            </div>
+        </div>
+    </section>
+    <!-- service tabs section -->
+    <section class="servicetabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="st-cont">
+                        <h4>All Services</h4>
+                        <ul>
+                            <li><a href="#">NDT Surface Preparation</a></li>
+                            <li><a href="#">Industrial Cleaning</a></li>
+                            <li><a href="#">Coating Removal</a></li>
+                            <li><a class="active" href="#">Soot Removal</a></li>
+                            <li><a href="#">Corrosion Removal</a></li>
+                            <li><a href="#">Precision Equipment</a></li>
+                            <li><a href="#">4 Jet Laser Sales</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="st-cont1">
+                        <span>SERVICES</span>
+                        <h3>Soot Removal</h3>
+                        <p>Vaporise soot from all hard surfaces, indoors and outdoors. Chemical and water free and entirely non destructive. Project Laser can selectively and precisely remove soot from all hard substrates and even carpet if it was required. By utilising the trained operators of Project Laser we can selectively and very precisely remove smoke damage from soot covered assets and structures in commercial and residential settings.</p>
+                            <div class="row">
+                            <div class="col-12">
+                                <div class="st-img">
+                                    <img src="./assets/images/soot.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <p>By eliminating water and chemicals you can ensure that surrounding areas are not damaged, meaning we can conduct cleaning in sensitive environments and without having to remove furniture, bund up areas or worry about overspray.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="soot-benefits">
+        <div class="container">
+            <div class="soot-ben-head">
+                <span>Soot Removal</span>
+                <h3>Benefits of laser for smoke removal</h3>
+                <p>Smoke damage can be removed selectively and precisely from bricks, paving, painted surfaces, wooden and steel beams as well as from ornate and decorative pieces. Insurance builders, councils, major loss builders can all make use of the highly effective and dry laser removal technology for fast and non-contact removal of soot.</p>
+                <p>Laser cleaning is carried out in situ without imparting or damaging the underlying substrate, the unique benefits of pulsed lasers mean that all solid surfaces can effectively be cleaned without using soda or dry ice blasting, nor any chemicals or water.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="comparison">
+                        <figure>
+                          <div id="handle"></div>
+                          <div id="divisor"></div>
+                        </figure>
+                        <input type="range" min="0" max="100" value="50" id="sliderR" oninput="moveDivisor()">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="comparison1">
+                        <figure>
+                          <div id="handle1"></div>
+                          <div id="divisor1"></div>
+                        </figure>
+                        <input type="range" min="0" max="100" value="50" id="sliderR1" oninput="moveDivisor1()">
+                    </div>
+                </div>
+            </div>
+            <div class="row row1">
+                <div class="col-lg-3 col-6">
+                    <div class="stbt-cont">
+                        <h4>Efficient</h4>
+                        <p>Laser cleaning is incredibly efficient at removing smoke damage. It can clean large areas quickly and effectively, making it the ideal choice for all residential, commercial and industrial properties.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="stbt-cont">
+                        <h4>Non Evasive</h4>
+                        <p>Unlike traditional cleaning methods that can damage the surface of soft porous stone or age-rammed earth structures being cleaned, laser cleaning is non-invasive using only infrared light. We don't use any harsh chemicals or abrasive materials that could cause further damage.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="stbt-cont">
+                        <h4>Environmentally Friendly</h4>
+                        <p>Laser cleaning is an environmentally-friendly solution as it doesn't produce any harmful chemicals or waste. It's a safe and sustainable choice for smoke damage removal in all environments.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="stbt-cont">
+                        <h4>Precise cleaning</h4>
+                        <p>Laser cleaning is incredibly precise, allowing you to target specific areas of smoke damage without affecting the surrounding material.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="scope-work">
+        <div class="container">
+            <div class="scw-head">
+                <h3>Scopes of work</h3>
+                <p>Selectively and deeply clean smoke damage and layers of soot, plastic and other thin debris from all hard surfaces.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="scw-cont">
+                        <img src="./assets/images/scop1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="scw-cont">
+                        <img src="./assets/images/scop2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="scw-cont">
+                        <div id="comparison2">
+                            <figure>
+                              <div id="handle2"></div>
+                              <div id="divisor2"></div>
+                            </figure>
+                            <input type="range" min="0" max="100" value="50" id="sliderR2" oninput="moveDivisor2()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="soot-howit-work">
+        <div class="container">
+            <div class="shiw-head">
+                <span>How it works?</span>
+                <h3>As seen by millions of people on our <span>INSIDER</span> interview</h3>
+            </div>
+            <div class="shiw-body">
+                <div class="video-wrapper">
+                    <div class="video-container" id="video-container">
+                        <video id="video" preload="metadata" poster="./assets/images/video-thumb.png">
+                            <source src="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/mp4">
+                        </video>
+                
+                        <div class="play-button-wrapper">
+                            <div title="Play video" class="play-gif" id="circle-play-b">
+                                <img src="./assets/images/video-icon.png" alt="">
+                                <p>See Video</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- KNOW MORE Section -->
+    <section class="know-more servise-km">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="km-cont1">
+                        <span>DROP US A LINE! BETTER YET, SEE US IN PERSON</span>
+                        <h4>For inquiries, discover, products or services</h4>
+                        <form action="">
+                            <input type="text" placeholder="Your name">
+                            <input type="email" placeholder="Your email">
+                            <input type="tel" placeholder="Mobile number">
+                            <input type="text" placeholder="Company">
+                            <textarea cols="10" rows="4" placeholder="Comment"></textarea>
+                            <button type="submit">
+                                Send Message
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                    <path d="M1 1L7 7L1 13" stroke="#1B1F4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="km-cont2">
+                        <span>get in touch</span>
+                        <h4>Feel free to get in touch with us!</h4>
+                        <div class="call-div">
+                            <span>Call</span>
+                            <a href="tel:+61 0402 759 024">+61 0402 759 024</a>
+                            <p>Mon-Sunday 24/7</p>
+                        </div>
+                        <div class="email-div">
+                            <span>Email</span>
+                            <a href="mailto:contact@projectlaser.com.au">contact@projectlaser.com.au</a>
+                        </div>
+                        <div class="service-location">
+                            <span>Serviced locations</span>
+                            <p>Mobile and catering to the whole of WA,
+                                with national wide capabilities.
+                            </p>
+                        </div>
+                        <div class="social-div">
+                            <span>Socials</span>
+                            <div class="sc-icon">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20" fill="none">
+                                        <path d="M7.2207 11.5H9.7207L10.7207 7.5H7.2207V5.5C7.2207 4.47062 7.2207 3.5 9.2207 3.5H10.7207V0.1401C10.395 0.09685 9.1637 0 7.8636 0C5.1491 0 3.2207 1.65686 3.2207 4.69971V7.5H0.220703V11.5H3.2207V20H7.2207V11.5Z" fill="#EE1E25"/>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                                        <path d="M10.9646 0.000488281C11.4987 0.00342828 12.835 0.0163483 14.2548 0.0732183L14.7582 0.0951681C16.1877 0.162848 17.616 0.278468 18.3244 0.475988C19.2693 0.741438 20.012 1.51599 20.263 2.49781C20.6627 4.0569 20.7127 7.09989 20.7189 7.83629L20.7198 7.98889V7.99959C20.7198 7.99959 20.7198 8.00329 20.7198 8.01039L20.7189 8.16299C20.7127 8.89939 20.6627 11.9424 20.263 13.5015C20.0085 14.4869 19.2658 15.2615 18.3244 15.5233C17.616 15.7208 16.1877 15.8364 14.7582 15.9041L14.2548 15.926C12.835 15.9829 11.4987 15.9958 10.9646 15.9988L10.7302 15.9996H10.7198C10.7198 15.9996 10.7163 15.9996 10.7094 15.9996L10.4752 15.9988C9.3448 15.9926 4.61842 15.9415 3.11521 15.5233C2.1703 15.2578 1.42762 14.4833 1.17657 13.5015C0.776903 11.9424 0.726943 8.89939 0.720703 8.16299V7.83629C0.726943 7.09989 0.776903 4.0569 1.17657 2.49781C1.4311 1.51235 2.17378 0.737808 3.11521 0.475988C4.61842 0.0577184 9.3448 0.00670828 10.4752 0.000488281H10.9646ZM8.71981 4.49963V11.4996L14.7198 7.99959L8.71981 4.49963Z" fill="#EE1E25"/>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M4.71978 2.00042C4.71941 2.81473 4.22538 3.54751 3.47064 3.85322C2.7159 4.15894 1.85117 3.97654 1.2842 3.39204C0.717227 2.80753 0.561247 1.93764 0.889797 1.19256C1.21836 0.447478 1.96584 -0.0240123 2.77978 0.000417671C3.86085 0.0328677 4.72027 0.918858 4.71978 2.00042ZM4.77978 5.48042H0.779776V18.0004H4.77978V5.48042ZM11.0998 5.48042H7.11978V18.0004H11.0598V11.4304C11.0598 7.77039 15.8298 7.43039 15.8298 11.4304V18.0004H19.7798V10.0704C19.7798 3.90042 12.7198 4.13042 11.0598 7.16039L11.0998 5.48042Z" fill="#EE1E25"/>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M11.8069 0.000488281C12.9323 0.00234828 13.5026 0.00830831 13.9954 0.0229783L14.1895 0.0293183C14.4137 0.0372883 14.6349 0.0472882 14.9016 0.0597882C15.9657 0.108958 16.6916 0.277288 17.3291 0.524788C17.9882 0.778958 18.5449 1.12229 19.1007 1.67813C19.6557 2.23396 19.9991 2.79229 20.2541 3.44979C20.5007 4.08646 20.6691 4.81313 20.7191 5.87729C20.731 6.14396 20.7406 6.36516 20.7485 6.5894L20.7548 6.78349C20.7694 7.27623 20.7761 7.84662 20.7782 8.97206L20.779 9.71766C20.7791 9.80876 20.7791 9.90276 20.7791 9.99976L20.779 10.2819L20.7784 11.0276C20.7765 12.153 20.7706 12.7234 20.7559 13.2161L20.7495 13.4102C20.7416 13.6345 20.7316 13.8557 20.7191 14.1223C20.6699 15.1865 20.5007 15.9123 20.2541 16.5498C19.9999 17.209 19.6557 17.7657 19.1007 18.3215C18.5449 18.8765 17.9857 19.2198 17.3291 19.4748C16.6916 19.7215 15.9657 19.8898 14.9016 19.9398C14.6349 19.9517 14.4137 19.9614 14.1895 19.9692L13.9954 19.9755C13.5026 19.9902 12.9323 19.9968 11.8069 19.999L11.0612 19.9998C10.9701 19.9998 10.8761 19.9998 10.7791 19.9998H10.497L9.7513 19.9991C8.6259 19.9973 8.05553 19.9913 7.56278 19.9766L7.36869 19.9703C7.14444 19.9623 6.92325 19.9523 6.65659 19.9398C5.59242 19.8907 4.86742 19.7215 4.22909 19.4748C3.57075 19.2207 3.01325 18.8765 2.45742 18.3215C1.90159 17.7657 1.55909 17.2065 1.30409 16.5498C1.05659 15.9123 0.889085 15.1865 0.839085 14.1223C0.827205 13.8557 0.817515 13.6345 0.809665 13.4102L0.803375 13.2161C0.788745 12.7234 0.782075 12.153 0.779915 11.0276L0.779785 8.97206C0.781645 7.84662 0.787595 7.27623 0.802265 6.78349L0.808615 6.5894C0.816585 6.36516 0.826585 6.14396 0.839085 5.87729C0.888245 4.81229 1.05659 4.08729 1.30409 3.44979C1.55825 2.79146 1.90159 2.23396 2.45742 1.67813C3.01325 1.12229 3.57159 0.779788 4.22909 0.524788C4.86659 0.277288 5.59159 0.109788 6.65659 0.0597882C6.92325 0.0479182 7.14444 0.0382283 7.36869 0.0303783L7.56278 0.0240881C8.05553 0.00944814 8.6259 0.00277822 9.7513 0.000618219L11.8069 0.000488281ZM10.7791 4.99979C8.01619 4.99979 5.77909 7.23932 5.77909 9.99976C5.77909 12.7627 8.01862 14.9998 10.7791 14.9998C13.542 14.9998 15.7791 12.7603 15.7791 9.99976C15.7791 7.23689 13.5395 4.99979 10.7791 4.99979ZM10.7791 6.99979C12.436 6.99979 13.7791 8.34246 13.7791 9.99976C13.7791 11.6567 12.4364 12.9998 10.7791 12.9998C9.12221 12.9998 7.77909 11.6572 7.77909 9.99976C7.77909 8.34286 9.12171 6.99979 10.7791 6.99979ZM16.0291 3.49979C15.3398 3.49979 14.7791 4.0597 14.7791 4.74894C14.7791 5.43819 15.339 5.99896 16.0291 5.99896C16.7183 5.99896 17.2791 5.43906 17.2791 4.74894C17.2791 4.0597 16.7174 3.49893 16.0291 3.49979Z" fill="#EE1E25"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-cont">
+                        <h4>get in touch</h4>
+                        <p>Servicing throughout WA and Australasian sales agents for 4Jet</p>
+                        <h5>Email</h5>
+                        <a href="mailto:contact@projectlaser.com.au">contact@projectlaser.com.au</a>
+                        <h5>phone</h5>
+                        <a href="tel:+61 0402 759 024">+61 0402 759 024</a>
+                        <h5>hours</h5>
+                        <span>Mon-Sunday 24/7</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-cont1">
+                        <img src="./assets/images/logo.png" alt="">
+                        <p>Project Laser is here to cater to all your specialist laser cleaning needs.</p>
+                        <div class="footer-social">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20" fill="none">
+                                    <path d="M7.2207 11.5H9.7207L10.7207 7.5H7.2207V5.5C7.2207 4.47062 7.2207 3.5 9.2207 3.5H10.7207V0.1401C10.395 0.09685 9.1637 0 7.8636 0C5.1491 0 3.2207 1.65686 3.2207 4.69971V7.5H0.220703V11.5H3.2207V20H7.2207V11.5Z" fill="#EE1E25"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                                    <path d="M10.9646 0.000488281C11.4987 0.00342828 12.835 0.0163483 14.2548 0.0732183L14.7582 0.0951681C16.1877 0.162848 17.616 0.278468 18.3244 0.475988C19.2693 0.741438 20.012 1.51599 20.263 2.49781C20.6627 4.0569 20.7127 7.09989 20.7189 7.83629L20.7198 7.98889V7.99959C20.7198 7.99959 20.7198 8.00329 20.7198 8.01039L20.7189 8.16299C20.7127 8.89939 20.6627 11.9424 20.263 13.5015C20.0085 14.4869 19.2658 15.2615 18.3244 15.5233C17.616 15.7208 16.1877 15.8364 14.7582 15.9041L14.2548 15.926C12.835 15.9829 11.4987 15.9958 10.9646 15.9988L10.7302 15.9996H10.7198C10.7198 15.9996 10.7163 15.9996 10.7094 15.9996L10.4752 15.9988C9.3448 15.9926 4.61842 15.9415 3.11521 15.5233C2.1703 15.2578 1.42762 14.4833 1.17657 13.5015C0.776903 11.9424 0.726943 8.89939 0.720703 8.16299V7.83629C0.726943 7.09989 0.776903 4.0569 1.17657 2.49781C1.4311 1.51235 2.17378 0.737808 3.11521 0.475988C4.61842 0.0577184 9.3448 0.00670828 10.4752 0.000488281H10.9646ZM8.71981 4.49963V11.4996L14.7198 7.99959L8.71981 4.49963Z" fill="#EE1E25"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                    <path d="M4.71978 2.00042C4.71941 2.81473 4.22538 3.54751 3.47064 3.85322C2.7159 4.15894 1.85117 3.97654 1.2842 3.39204C0.717227 2.80753 0.561247 1.93764 0.889797 1.19256C1.21836 0.447478 1.96584 -0.0240123 2.77978 0.000417671C3.86085 0.0328677 4.72027 0.918858 4.71978 2.00042ZM4.77978 5.48042H0.779776V18.0004H4.77978V5.48042ZM11.0998 5.48042H7.11978V18.0004H11.0598V11.4304C11.0598 7.77039 15.8298 7.43039 15.8298 11.4304V18.0004H19.7798V10.0704C19.7798 3.90042 12.7198 4.13042 11.0598 7.16039L11.0998 5.48042Z" fill="#EE1E25"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                    <path d="M11.8069 0.000488281C12.9323 0.00234828 13.5026 0.00830831 13.9954 0.0229783L14.1895 0.0293183C14.4137 0.0372883 14.6349 0.0472882 14.9016 0.0597882C15.9657 0.108958 16.6916 0.277288 17.3291 0.524788C17.9882 0.778958 18.5449 1.12229 19.1007 1.67813C19.6557 2.23396 19.9991 2.79229 20.2541 3.44979C20.5007 4.08646 20.6691 4.81313 20.7191 5.87729C20.731 6.14396 20.7406 6.36516 20.7485 6.5894L20.7548 6.78349C20.7694 7.27623 20.7761 7.84662 20.7782 8.97206L20.779 9.71766C20.7791 9.80876 20.7791 9.90276 20.7791 9.99976L20.779 10.2819L20.7784 11.0276C20.7765 12.153 20.7706 12.7234 20.7559 13.2161L20.7495 13.4102C20.7416 13.6345 20.7316 13.8557 20.7191 14.1223C20.6699 15.1865 20.5007 15.9123 20.2541 16.5498C19.9999 17.209 19.6557 17.7657 19.1007 18.3215C18.5449 18.8765 17.9857 19.2198 17.3291 19.4748C16.6916 19.7215 15.9657 19.8898 14.9016 19.9398C14.6349 19.9517 14.4137 19.9614 14.1895 19.9692L13.9954 19.9755C13.5026 19.9902 12.9323 19.9968 11.8069 19.999L11.0612 19.9998C10.9701 19.9998 10.8761 19.9998 10.7791 19.9998H10.497L9.7513 19.9991C8.6259 19.9973 8.05553 19.9913 7.56278 19.9766L7.36869 19.9703C7.14444 19.9623 6.92325 19.9523 6.65659 19.9398C5.59242 19.8907 4.86742 19.7215 4.22909 19.4748C3.57075 19.2207 3.01325 18.8765 2.45742 18.3215C1.90159 17.7657 1.55909 17.2065 1.30409 16.5498C1.05659 15.9123 0.889085 15.1865 0.839085 14.1223C0.827205 13.8557 0.817515 13.6345 0.809665 13.4102L0.803375 13.2161C0.788745 12.7234 0.782075 12.153 0.779915 11.0276L0.779785 8.97206C0.781645 7.84662 0.787595 7.27623 0.802265 6.78349L0.808615 6.5894C0.816585 6.36516 0.826585 6.14396 0.839085 5.87729C0.888245 4.81229 1.05659 4.08729 1.30409 3.44979C1.55825 2.79146 1.90159 2.23396 2.45742 1.67813C3.01325 1.12229 3.57159 0.779788 4.22909 0.524788C4.86659 0.277288 5.59159 0.109788 6.65659 0.0597882C6.92325 0.0479182 7.14444 0.0382283 7.36869 0.0303783L7.56278 0.0240881C8.05553 0.00944814 8.6259 0.00277822 9.7513 0.000618219L11.8069 0.000488281ZM10.7791 4.99979C8.01619 4.99979 5.77909 7.23932 5.77909 9.99976C5.77909 12.7627 8.01862 14.9998 10.7791 14.9998C13.542 14.9998 15.7791 12.7603 15.7791 9.99976C15.7791 7.23689 13.5395 4.99979 10.7791 4.99979ZM10.7791 6.99979C12.436 6.99979 13.7791 8.34246 13.7791 9.99976C13.7791 11.6567 12.4364 12.9998 10.7791 12.9998C9.12221 12.9998 7.77909 11.6572 7.77909 9.99976C7.77909 8.34286 9.12171 6.99979 10.7791 6.99979ZM16.0291 3.49979C15.3398 3.49979 14.7791 4.0597 14.7791 4.74894C14.7791 5.43819 15.339 5.99896 16.0291 5.99896C16.7183 5.99896 17.2791 5.43906 17.2791 4.74894C17.2791 4.0597 16.7174 3.49893 16.0291 3.49979Z" fill="#EE1E25"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-cont2">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Corrosion Removal</a></li>
+                            <li><a href="#">NDT Surface Prep</a></li>
+                            <li><a href="#">Coating Removal</a></li>
+                            <li><a href="#">Smoke Damage Removal</a></li>
+                            <li><a href="#">Smoke Damage Removal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-newsletter-div">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="nws-cont">
+                            <h3>subscribe to our
+                                newsletter</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="nws-form">
+                            <form action="">
+                                <input type="text" placeholder="Your name">
+                                <input type="email" placeholder="Your email address">
+                                <button type="submit">
+                                    Subscribe
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                        <path d="M1 1L7 7L1 13" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-div">
+                <p>Copyright © 2024 | <a href="/">Project Laser</a> | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

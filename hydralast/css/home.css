@@ -1,0 +1,2625 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Trap';
+  src: url('../fonts/trap/Trap-Black.woff');
+  src: url('../fonts/trap/Trap-Bold.woff');
+  src: url('../fonts/trap/Trap-ExtraBold.woff');
+  src: url('../fonts/trap/Trap-Light.woff');
+  src: url('../fonts/trap/Trap-Medium.woff');
+  src: url('../fonts/trap/Trap-Regular.woff');
+  src: url('../fonts/trap/Trap-SemiBold.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ===========mobile header============ */
+
+.x-mobile-header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.x-mobile-header-logos {
+  display: flex;
+  gap: 48px;
+}
+
+.x-mobile-header-cart {
+  position: relative;
+}
+
+.cart-count-bubble {
+  position: absolute;
+  right: -5px;
+  bottom: 0px;
+  background: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+
+}
+
+.menu-bar-show-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+}
+
+
+.menu-bar-show-overlay.active-behind {
+  display: block;
+}
+
+
+.x-mobile-header-hide-menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 18px;
+}
+
+.x-mobile-header-menu {
+  overflow: hidden;
+}
+
+.x-header-menu-open {
+  cursor: pointer;
+}
+
+.x-mobile-header-hide-menu-bg {
+  position: fixed;
+  background-color: #FFF;
+  padding: 20px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  max-width: 335px;
+  transition: 0.3s all;
+  transform: translateX(100%);
+  z-index: 1;
+}
+
+.x-mobile-header-hide-menu-bg.active-menu {
+  transform: translateX(0);
+}
+
+
+
+.x-mobile-header-menu {
+  overflow: hidden;
+}
+
+
+
+.x-mobile-header-hide-menu-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.accordion-link {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 17px;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.accordion-link:hover {
+  color: #E2960F;
+}
+
+.split-accordion-text ul li a {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.x-mobile-header-hide-menu-list ul li {
+  padding-bottom: 8px;
+}
+
+.x-mobile-header-hide-menu-list {
+  padding-top: 40px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.split-accordion-text {
+  padding-top: 8px;
+}
+
+.split-accordion-text {
+  display: none;
+}
+
+.mobile-search-accordian {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 3px;
+}
+
+.x-mobile-header-logout {
+  position: absolute;
+  bottom: 20px;
+}
+
+.x-mobile-header-logout a {
+  color: #111;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #354052;
+  justify-content: center;
+  padding: 10px 58px;
+}
+
+.x-header-menu-close {
+  cursor: pointer;
+}
+
+.hydra-list ul li {
+  border-radius: 60px;
+  background-color: #E2960F;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  list-style: none;
+  padding: 13px 24px;
+  transition: 0.3s;
+}
+
+.hydra-list ul li:hover {
+  background-color: #6BB531;
+}
+
+.hydra-list ul li a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 13px 0px;
+}
+
+.hydra-list ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.hydra-number a {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s;
+}
+
+.hydra-number a:hover{
+  color: #E2960F;
+}
+.hydra-number a svg path{
+transition: 0.3s;
+}
+.hydra-number a:hover svg path{
+  fill: #E2960F;
+}
+
+.hydra-number a {
+  position: relative;
+}
+
+.hydra-number a::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 32px;
+  background: #CBCBCB;
+  right: -24px;
+}
+
+.hydralast-bg {
+  background-image: url('../images/hydralast-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.hydralast-paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hydralast-paragraph p {
+  color: #CBCBCB;
+  font-family: 'Poppins';
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 961px;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.hydralast-paragraph p span {
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.hydralast-paragraph p .hydra-spr {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.hydralast-paragraph p .hydra-line {
+  position: relative;
+}
+
+.hydralast-paragraph p .hydra-line::before {
+  position: absolute;
+  content: url(../images/hydra-line.svg);
+  bottom: -13px;
+  right: -3px;
+}
+
+
+
+/* hydra-gltpm section */
+
+.hydra-gltpm-heading a {
+  border-radius: 60px;
+  background-color: #E2960F;
+  padding: 14px 24px;
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hydra-gltpm-heading a:hover {
+  background-color: #6BB531;
+}
+
+.hydra-gltpm-img img {
+  width: 100%;
+}
+
+.hydra-gltpm {
+  display: flex;
+  align-items: center;
+}
+
+.hydra-gltpm-heading h2 {
+  color: #383838;
+  font-family: 'Trap';
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hydra-gltpm-heading ul {
+  list-style: none;
+  padding: 50px 0;
+  margin: 0;
+}
+
+.hydra-gltpm-heading ul li {
+  color: #757575;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  display: flex;
+  gap: 14px;
+  padding-bottom: 16px;
+
+}
+
+.hydra-gltpm-heading {
+  max-width: 740px;
+}
+
+.hydra-gltpm-heading h2 span {
+  color: #0673C4;
+  font-weight: 900;
+}
+
+.hydra-gltpm {
+  padding-top: 114px;
+}
+
+.hydra-gltpm-heading ul li span {
+  color: #0673C4;
+}
+
+
+/* hydra video section css */
+
+.hvb-heading h2 {
+  /* max-width: 752px; */
+  color: var(--Dark-grey, #383838);
+  font-family: 'Trap';
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hvb-heading h2 span {
+  color: #0673C4;
+  font-weight: 900;
+}
+
+.hvb-paragraph p {
+  color: #757575;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+}
+
+/* .hydra-video-bg {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 194px;
+  padding-bottom: 60px;
+} */
+
+.hydra-vid-para{
+  display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-top: 114px;
+}
+
+.hydra-video-bg{
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.hvb-paragraph p span {
+  color: #E2960F;
+  font-weight: 600;
+}
+
+.hydra-video video {
+  height: 780px;
+  object-fit: cover;
+  border-radius: 36px;
+  cursor: pointer;
+}
+
+.hydra-video p {
+  color: var(--Primary, #0673C4);
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.15px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  text-align: center;
+  margin: 0;
+}
+
+.hydra-gltpm-bg {
+  background-image: url(../images/Layer_5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+
+/* hydra paln section */
+
+.hydra-plan h2 {
+  color: #383838;
+  font-family: 'Trap';
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hydra-plan h2 span {
+  color: #0673C4;
+  font-weight: 900;
+}
+
+.hydra-plan p {
+  color: #757575;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+.hydra-plan {
+  text-align: center;
+  padding-top: 76px;
+  padding-bottom: 60px;
+}
+
+.hydra-category {
+  max-width: 490px;
+  border-radius: 24px;
+  border: 2px solid #B7B7B7;
+  background: #FFF;
+}
+
+.hydra-category h4 {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #CBCBCB;
+  background: #F2F2F2;
+  padding: 18px 0;
+  border-radius: 24px 24px 0 0;
+}
+
+.hydra-cate-img h5 {
+  color: #0673C4;
+  font-family: 'Poppins';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.18px;
+}
+
+.hydra-cate-img {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.hydra-cate-img p {
+  background-image: url(../images/Union.png);
+  background-repeat: no-repeat;
+  background-position: 54% 50%;
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  margin: 0;
+  padding: 8px 0;
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+
+.hydra-cate-img p span {
+  color: #0673C4;
+}
+
+.hydra-cate-radio label {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  cursor: pointer;
+}
+
+
+/* .hydra-cate-radio input[type="radio"] {
+  display: none; 
+}
+.hydra-cate-radio label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+.hydra-cate-radio .custom-radio {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+.hydra-cate-radio input[type="radio"]:checked + .custom-radio {
+  background-color: red;
+}
+.hydra-cate-radio input[type="radio"]:checked + .custom-radio::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+} */
+.hydra-cate-special h2 {
+  color: #0673C4;
+  font-family: 'Poppins';
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.hydra-cate-special h6 {
+  color: #6BB531;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+
+.hydra-cart button {
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 60px;
+  background-color: #6BB531;
+  width: 354px;
+  padding: 10px 0;
+}
+
+.hydra-cart button:hover {
+  background-color: #E2960F;
+  color: #FFF;
+}
+
+.hydra-cate-list h3 {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.hydra-cate-list ul {
+  list-style: none;
+  margin-bottom: 20px;
+  /* padding: 0; */
+}
+
+.hydra-cate-list {
+  border-top: 1px solid #CBCBCB;
+  border-bottom: 1px solid #CBCBCB;
+  padding: 0 24px;
+}
+
+.hydra-cate-list ul li {
+  color: #757575;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.hydra-cate-list ul li strong {
+  color: #E2960F;
+  font-weight: 600;
+}
+
+.hydra-cate-list ul li span {
+  text-decoration: line-through #E2960F;
+}
+
+.hydra-cate-list ul li::before {
+  position: absolute;
+  content: url(../images/green-check.svg);
+  left: -32px;
+}
+
+.hydra-cate-special {
+  padding-top: 30px;
+}
+
+.hydra-cate-noreturn h2 {
+  color: #757575;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 20px 24px 24px 24px;
+}
+
+
+.hydra-plan-bg {
+  background-image: url(../images/perfect-price.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #E8F3F5;
+}
+
+
+.hydra-plans-category {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.hydra-category-clr h4 {
+  background: #6BB531;
+  color: white;
+  border-radius: 20px 20px 0 0;
+}
+
+.hydra-category-clr {
+  border-radius: 24px;
+  border: 4px solid var(--Primary, #0673C4);
+  background: #D8E9FF;
+  box-shadow: 10px 10px 80px 0px rgba(6, 115, 196, 0.12), 6px 4px 20px 0px rgba(6, 115, 196, 0.12);
+}
+
+.hydra-percent-off h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+}
+
+.hydra-percent-off h3 {
+  color: var(--Primary, #0673C4);
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hydra-percent-off {
+  padding-top: 30px;
+}
+
+.hydra-order a {
+  border-radius: 60px;
+  background: #E2960F;
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 24px;
+  transition: 0.3s;
+}
+
+.hydra-order a:hover {
+  background-color: #6BB531;
+}
+
+.hydra-order {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+
+/* hydra works  */
+
+.hydra-works-heading h2 {
+  color: #383838;
+  text-align: center;
+  font-family: 'Trap';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.hydra-works-heading p {
+  color: #757575;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+
+.hydra-works-heading p span {
+  display: block;
+}
+
+.hydra-works-heading {
+  padding-top: 80px;
+}
+
+.hydra-works-content .row {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.hwc-img img {
+  max-width: 100%;
+}
+
+.hwc-head h4 {
+  color: var(--Primary, #0673C4);
+  text-align: right;
+  font-family: 'Poppins';
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 22px;
+}
+
+.hwc-head p {
+  color: var(--Grey, #757575);
+  text-align: right;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+.hwc-head-rg h4,
+.hwc-head-rg p {
+  text-align: start;
+}
+
+.hydra-works-content-bg {
+  position: relative;
+}
+
+/* .hydra-works-content-bg::after {
+  position: absolute;
+  content: url(../images/work-line.png);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+.hydra-works-content-bg {
+  background-image: url(../images/work-line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.hydra-works-heading {
+  padding-bottom: 60px;
+}
+
+
+/* meds hydration nutretion */
+
+/* .hydra-meds-bg .container {
+  max-width: 1700px;
+} */
+
+.htp-content-img-bg{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.htp-content-img img{
+  width: 100%;
+}
+
+.htp-content-img-bg{
+  padding-bottom: 149px;
+}
+
+.htp-content-img-bg:last-child{
+  padding-bottom: unset;
+}
+
+.hydra-meds-heading h2 {
+  color: #383838;
+  font-family: 'Poppins';
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hydra-meds-heading h2 span {
+  color: #0673C4;
+}
+
+.hydra-meds-heading p {
+  color: #757575;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+.hydra-meds-heading {
+  text-align: center;
+}
+
+.hmc-content-heading {
+  max-width: 484px;
+}
+
+
+.hmc-content-heading .table {
+  background-color: white;
+  border-radius: 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  box-shadow: 10px 10px 80px 0px rgba(0, 0, 0, 0.07), 6px 4px 20px 0px rgba(0, 0, 0, 0.09);
+  margin: 0;
+  padding: 14px 0;
+
+}
+
+.hmc-content-heading .table thead th {
+  color: var(--Primary, #0673C4);
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  padding-left: 14px;
+}
+
+/* .table tbody tr:nth-child(even) {
+  background-color: #ffcccc;
+}
+.table th, .table td {
+  padding: 8px 12px;
+} */
+
+.hmc-content-heading-green th,
+.hmc-content-heading-green td {
+  background: #6BB531;
+}
+
+.hmc-content-heading .table tbody tr th {
+  color: #0673C4;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  padding-left: 14px;
+}
+
+/* .hmc-content-heading .table tbody tr th:last-child{
+  border: none;
+} */
+
+.hmc-content-heading .table tbody tr:last-child {
+  border-color: white;
+}
+
+.hmc-content-heading .table tbody td {
+  color: #383838;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  line-height: 30px;
+}
+
+/* .hmc-content-heading .table tbody tr td:last-child{
+  border: none;
+} */
+.hmc-content-heading-green td {
+  color: #FFF !important;
+}
+
+
+/* htp content */
+
+.htp-content {
+  max-width: 571px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 10px 10px 80px 0px rgba(0, 0, 0, 0.07), 6px 4px 20px 0px rgba(0, 0, 0, 0.09);
+  padding: 8px 0;
+}
+
+.htp-content h4 {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.15px;
+  padding-left: 18px;
+}
+
+.htp-content h5 {
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.15px;
+  margin: 0;
+  background: #E2960F;
+  padding: 13px 18px;
+}
+
+.htp-content thead th {
+  color: #0673C4;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+.htp-content tbody th {
+  color: #757575;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  width: 180px;
+}
+
+.htp-content tbody th span {
+  display: block;
+}
+
+.htp-content tbody td {
+  color: #383838;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 19.6px */
+  letter-spacing: 0.25px;
+}
+
+.htp-content tbody td span {
+  display: block;
+}
+
+.htp-content ul li {
+  color: #757575;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+  /* 16.8px */
+  letter-spacing: 0.25px;
+}
+
+.htp-content-center {
+  text-align: center;
+}
+
+.htp-content .htp-content-padding {
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+.htp-content .htp-con-padd {
+  padding-left: 20px;
+}
+
+.hydra-meds-content-bg {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  padding: 60px 0 0 0;
+  /* gap: 20px; */
+}
+
+.hydra-meds-bg {
+  background-image: url(../images/meds-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #E8F3F5;
+  background-size: cover;
+}
+
+.hydra-meds-heading {
+  padding-top: 76px;
+}
+
+.hydra-circle {
+  text-align: center;
+  padding: 120px 0;
+}
+
+.hydra-circle-logo {
+  padding-bottom: 100px;
+}
+
+.hydra-circle-logo img,
+.hydra-circle-content-img img {
+  max-width: 100%;
+}
+
+/* featured product */
+
+.hfp-heading h2 {
+  color: #383838;
+  text-align: center;
+  font-family: 'Trap';
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hfp-heading h2 span {
+  color: #0673C4;
+}
+
+.hfp-heading p {
+  color: #757575;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+
+.hfp-content-img img {
+  width: 100%;
+}
+
+.hfp-content-img h4 {
+  color: #0673C4;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.18px;
+  margin: 26px 0;
+}
+
+.hfp-content-img p {
+  color: #757575;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  margin-bottom: 50px;
+}
+
+.hfp-content-img a {
+  border-radius: 60px;
+  background: #E2960F;
+  padding: 12px 30px;
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hfp-content-img a:hover {
+  background-color: #6BB531;
+}
+
+.hfp-content-img {
+  text-align: center;
+}
+
+.hydralast-featured-product-bg {
+  padding: 80px 0;
+  background: rgba(30, 136, 156, 0.08);
+}
+
+.hydra-drink-heading h4 {
+  color: #383838;
+  font-family: 'Trap';
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hydra-drink-heading h4 span {
+  color: #0673C4;
+}
+
+.hydra-drink-para p {
+  color: #757575;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+
+.hydra-drink-para p span {
+  color: #E2960F;
+}
+
+.hydra-drink-heading-bg {
+  padding: 60px 0 60px 0;
+}
+
+.hydra-innovative {
+  max-width: 672px;
+  height: 672px;
+  margin: 0 auto;
+}
+
+.hydra-innovative h4 {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Trap';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+}
+
+.hydra-innovative-color {
+  color: #E2960F;
+}
+
+.hydra-innovative {
+  border-radius: 672px;
+  background: rgba(0, 0, 0, 0.30);
+  backdrop-filter: blur(13.899999618530273px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.hydra-innovative:after{
+  position: absolute;
+  content: url(../images/mw-1.svg);
+  top: 40px;
+  left: 100px;  
+}
+
+.hydra-innovative::before{
+  position: absolute;
+  content: url(../images/mw-2.svg);
+  bottom: 0;
+  right: 0;
+}
+
+
+.hydra-innovative p {
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  /* 33.6px */
+  letter-spacing: 0.18px;
+}
+
+.hydra-innovative-bg {
+  background-image: url(../images/innovative-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 117px 0 71px 0;
+  margin-bottom: 80px;
+}
+
+.hydra-innovative-block {
+  display: block;
+}
+
+.hydra-innovative p span {
+  display: block;
+}
+
+.hydra-checkout h4 {
+  color: #383838;
+  text-align: center;
+  font-family: 'Trap';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  max-width: 1050px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding-top: 80px;
+}
+
+.hydra-checkout h4 span {
+  color: #0673C4;
+}
+
+
+/* check out */
+
+.hydra-checkout-img {
+  border-radius: 24px;
+  background: #FFF;
+  box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.10);
+  padding: 24px 24px 24px 24px;
+}
+
+.hydra-checkout-img img {
+  width: 100%;
+}
+.hci-cont{
+  position: relative;
+}
+.hci-cont p{
+  position: absolute;
+  content: '';
+  top: 16px;
+  right: 16px;
+  border-radius: 60px;
+    background:  #6BB531;
+    padding: 9px 20px;
+    margin: 0;
+    color:  #FFF;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.hc-date p {
+  color: #969798;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  margin: 0;
+}
+
+.hc-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.hc-heading h4 {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.18px;
+  margin-bottom: 15px;
+}
+
+.hc-heading p {
+  color: #969798;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin-bottom: 40px;
+}
+
+.hc-heading a {
+  color: #0A76F6;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hydra-content-bg .row .col-lg-4 {
+  max-width: 466px;
+}
+
+.hydra-content-bg .row {
+  justify-content: space-between;
+}
+
+.hydra-check-out-bg .container {
+  background-image: url(../images/Layer_5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* FAQ */
+
+.hydra-faq-bg {
+  background-image: url(../images/FAQ-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hydra-faq-heading h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Trap';
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.hydra-faq-heading p {
+  max-width: 757px;
+  margin: 0 auto;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  margin-bottom: 60px;
+}
+
+.hydra-faq-heading p a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+.hydra-faq-bg .accordion-button:not(.collapsed) {
+  background-color: unset;
+  box-shadow: unset;
+}
+
+.hydra-faq-bg .accordion-button:focus {
+  box-shadow: unset;
+  padding: 0;
+}
+
+.hydra-faq-bg .accordion-item {
+  background-color: unset;
+  padding: 40px 10px;
+  border-color: #CBCBCB;
+}
+
+.hydra-faq-bg .accordion-button {
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+  background-color: unset;
+  padding: 0;
+  /* padding: 40px 10px; */
+}
+
+.hydra-faq-bg .accordion-body {
+  color: #F0F0F0;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  padding: 24px 0px 0 0px;
+}
+
+.hydra-faq-contact h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.hydra-faq-contact p {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  padding-bottom: 16px;
+}
+
+.hydra-faq-contact a {
+  color: #0673C4;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 60px;
+  background-color: #FFF;
+  padding: 20px 24px;
+  transition: 0.3s;
+}
+
+.hydra-faq-contact a:hover {
+  background-color: #0673C4;
+  color: white;
+}
+
+.hydra-faq-bg .container {
+  max-width: 1296px;
+}
+
+.hydra-faq-contact {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.hydra-faq {
+  padding: 120px 0;
+}
+
+
+.hydra-faq-bg .accordion-button::after {
+  background-image: url(../images/down.svg);
+}
+
+/* contact */
+.hydra-number-bg {
+  max-width: 593px;
+  border-radius: 24px;
+  background-color: #0673C4;
+  padding-top: 84px;
+  padding-left: 56px;
+  height: 672px;
+  position: relative;
+}
+
+.hydra-number-bg:after {
+  position: absolute;
+  content: url(../images/contact-1.png);
+  top: 0;
+  left: 0;
+}
+
+.hydra-number-bg::before {
+  position: absolute;
+  content: url(../images/contact-2.png);
+  bottom: -8px;
+  right: 0;
+}
+
+.hydra-contact-number a {
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  transition: 0.3s;
+}
+
+.hydra-contact-number a:hover {
+  color: #E2960F;
+}
+
+.hydra-contact-number a svg path {
+  transition: 0.3s;
+}
+
+.hydra-contact-number a:hover svg path {
+  fill: #E2960F;
+}
+
+.hydra-number-contact h4 {
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.hydra-number-contact p {
+  color: #F0F0F0;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  opacity: 0.8;
+  margin-bottom: 60px;
+}
+
+.hydra-contact-number {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 71px;
+  border-radius: 36px;
+  background: #FFF;
+  box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.11);
+  padding: 19px 0px 19px 26px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-info-bg {
+  padding: 80px 0;
+}
+
+.contact-info::after {
+  position: absolute;
+  content: url(../images/contact-3.png);
+  top: 0;
+  right: 0;
+}
+
+.contact-info::before {
+  position: absolute;
+  content: url(../images/contact-4.png);
+  bottom: -8px;
+  right: 0;
+}
+
+.bfl-ipt label {
+  color: #757575;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+}
+
+.bfl-ipt {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bfl-ipt-bg {
+  display: flex;
+  gap: 30px;
+}
+
+.bfl-ipt input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #CBCBCB;
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.18px;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+.hmn-textarea label {
+  color: var(--Grey, #757575);
+  font-family: Poppins;
+  font-size: 16px;
+  /* font-style: normal; */
+  font-weight: 500;
+  /* line-height: 24px; */
+  letter-spacing: 0.15px;
+}
+
+.hmn-textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hmn-textarea textarea {
+  border: none;
+  border-bottom: 1px solid #CBCBCB;
+  outline: none;
+}
+
+.hmn-textarea textarea::placeholder {
+  color: #CBCBCB;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+
+.hydra-name-mail-bg {
+  max-width: 760px;
+  margin-right: 20px;
+}
+
+.hmn-button button {
+  border-radius: 60px;
+  background-color: #E2960F;
+  padding: 12px 24px;
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hmn-button button:hover {
+  background-color: #6BB531;
+  color: #FFF;
+}
+
+.hnm-mail {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* footer */
+
+.hydra-footer-bg {
+  background-image: url(../images/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hydra-content h4 {
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.hydra-content ul li {
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  list-style: none;
+}
+
+.hydra-content ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.hydra-content ul li a {
+  color: #FFF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: 0.3s;
+}
+
+.hydra-content ul li a:hover {
+  color: #E2960F;
+}
+
+.hydra-content ul li a svg path {
+  transition: 0.3s;
+}
+
+.hydra-content ul li a:hover svg path {
+  fill: #E2960F;
+}
+
+.frb-heading h4 {
+  color: #FFF;
+  font-family: 'poppins';
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer-right-link a {
+  color: #FFF;
+  font-family: 'poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.footer-right-link a:hover{
+  color: #E2960F;
+}
+
+.footer-right-bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  border-top: 1px solid #CBCBCB;
+}
+
+.hydra-footer {
+  padding-bottom: 60px;
+  padding-top: 80px;
+}
+
+.hydra-footer .hydra-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-right-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+/* hydra difference */
+
+.hydra-difference .hfp-heading h2{
+  font-family: 'poppins';
+}
+
+.hdm-medi{
+  border-radius: 24px;
+  background: #FFF;
+  box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.10);
+  max-width: 621px;
+  /* height: 534px; */
+  padding: 42px;
+  margin-bottom: 60px;
+}
+
+.hdm-medi h4{
+  color:  #6BB531;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'poppins';
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 0.18px;
+  padding-bottom: 16px;
+}
+
+.hdm-medi p{
+  color: #969798;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'poppins';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.hdm-medi img{
+  margin-bottom: 36px;
+}
+.hdm-flex{
+  display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 80px;
+}
+
+.hdm-padding{
+  padding-top: 143px;
+}
+
+.hydra-difference{
+  padding-top: 80px;
+}
+
+
+/* ======ingredient ========= */
+.ingredient h2{
+  color: #383838;
+  text-align: center;
+  font-family: 'Trap';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  max-width: 1050px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding-top: 80px;
+}
+.ingredient-row h4{
+  color: black;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Poppins';
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+}
+
+.ingredient-grape h6{
+  color: black;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Poppins';
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+}
+.ingredient-grape p{
+  color: black;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+
+.ingredient-bg{
+  background-image: url(../images/ingr-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ingredient-row{
+  padding-bottom: 80px;
+}
+.ingr-img{
+  text-align: center;
+}
+.ingredient-grape{
+  padding-top: 20px;
+}
+
+
+
+
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1520px;
+  }
+}
+
+
+@media(max-width: 1500px) {
+  .hydra-gltpm-img img {
+    width: 100%;
+  }
+}
+
+@media(max-width: 1250px) {
+  .hydra-meds-content-bg {
+    gap: 10px;
+  }
+
+  /* .hydralast-paragraph img{
+  width: 100%;
+} */
+}
+
+@media (max-width: 1199px) {
+  .hydralast-paragraph p {
+    font-size: 30px;
+}
+
+  /* .container {
+        min-width: 1100px;
+    } */
+  .hydra-meds-content-bg {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hydra-plans-category {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hydra-number a,
+  .hydra-list ul li {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width:991px) { 
+  .hydralast-bg { 
+    height: unset;
+}
+
+  .hydra-works-content-bg {
+    background-image: none;
+}
+
+  .hdm-flex {
+    flex-wrap: wrap;
+    gap: 0;
+    padding-top: 40px;
+}
+
+.hdm-padding {
+  padding-top: 0;
+}
+
+.hydra-difference {
+  padding-top: 50px;
+}
+
+  .hydra-vid-para {
+    flex-wrap: wrap;
+    gap: 60px;
+    padding-top: 20px;
+}
+  .hydralast-paragraph {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hydralast-paragraph p span {
+    font-size: 32px;
+  }
+
+  .hydralast-paragraph p {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  /* .hydralast-paragraph img{
+    width: 100%;
+  } */
+
+  .hydra-number {
+    display: none;
+  }
+
+  .hydra-list ul li {
+    font-size: 14px;
+  }
+
+  .hydralast-paragraph p .hydra-line::before {
+    bottom: -16px;
+    right: -45px;
+  }
+
+  .hydra-gltpm {
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+
+  .hydra-gltpm-heading ul {
+    padding: 20px 0;
+  }
+
+  .hydra-video-bg {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
+  .hvb-paragraph p {
+    font-size: 18px;
+  }
+
+  .hvb-heading h2 {
+    font-size: 32px;
+  }
+
+  .hydra-video p {
+    padding-bottom: 50px;
+  }
+
+  .hydra-plan {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .hydra-plan h2 {
+    font-size: 32px;
+  }
+
+  .hydra-plan p {
+    font-size: 18px;
+  }
+
+  .hydra-works-content-bg::after {
+    content: unset;
+  }
+
+  .hfp-content .col-md-6 {
+    padding-bottom: 30px;
+  }
+
+  .hydra-content-bg .row {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hydra-checkout h4 {
+    padding-top: 0;
+  }
+
+  .contact-info {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .hydra-footer .hydra-row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+  }
+
+  .hydra-content h4 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .hydra-content ul {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hydra-footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .footer-right-link a,
+  .frb-heading h4 {
+    font-size: 14px;
+  }
+
+  .footer-right-bg {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .hwc-change .row {
+    flex-direction: column-reverse;
+  }
+
+  .hwc-head h4 {
+    text-align: start;
+  }
+
+  .hwc-head p {
+    text-align: start;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width:767px) {
+
+  .hcib-mob{
+    flex-direction: column-reverse;
+  }
+
+  .htp-content-img-bg {
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+  .hydralast-paragraph img {
+    width: 100%;
+  }
+
+  .hydralast-paragraph p {
+    margin-top: 0px;
+  }
+
+  .hydra-list {
+    display: none;
+  }
+
+  .hydralast-paragraph p {
+    font-size: 22px;
+  }
+
+  .hydralast-paragraph p span {
+    font-size: 28px;
+  }
+
+  .hydralast-paragraph p .hydra-spr {
+    font-size: 28px;
+  }
+
+  .hydralast-bg {
+    height: unset;
+  }
+
+  .hydralast-paragraph {
+    padding: 40px 0;
+  }
+
+  .hydra-gltpm-heading h2,
+  .hvb-heading h2 {
+    font-size: 24px;
+  }
+
+  .hydra-gltpm-heading ul li {
+    font-size: 16px;
+    gap: 10px;
+    padding-bottom: 5px;
+  }
+
+  .hydra-gltpm-heading a {
+    font-size: 16px;
+  }
+
+  .hvb-paragraph p {
+    font-size: 16px;
+  }
+
+  .hydra-video-bg {
+    gap: 0px;
+    padding-bottom: 10px;
+
+  }
+
+  .hydra-video video {
+    height: unset;
+  }
+
+  .hydra-video p {
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .hydra-plan {
+    padding-bottom: 20px;
+  }
+
+  .hydra-plan h2 {
+    font-size: 24px;
+  }
+
+  .hydra-plan p {
+    font-size: 16px;
+  }
+
+  .hydra-category h4 {
+    font-size: 24px;
+    padding: 10px 0;
+  }
+
+  .hydra-cate-img {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .hydra-cate-special h2 {
+    font-size: 24px;
+  }
+
+  .hydra-cate-special h6 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .hydra-cate-special {
+    padding-top: 10px;
+  }
+
+  .hydra-cart button {
+    font-size: 16px;
+    width: max-content;
+    padding: 10px 20px;
+  }
+
+  .hydra-cate-list h3 {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  .hydra-cate-list ul li {
+    font-size: 16px;
+  }
+
+  .hydra-cate-noreturn h2 {
+    padding: 15px 24px 17px 24px;
+  }
+
+  .hydra-percent-off h3 {
+    font-size: 24px;
+  }
+
+  .hydra-percent-off h2 {
+    font-size: 18px;
+  }
+
+  .hydra-cate-img h5 {
+    font-size: 24px;
+  }
+
+  .hydra-order a {
+    font-size: 16px;
+  }
+
+  .hydra-order {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .hydra-works-heading {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .hydra-works-heading h2 {
+    font-size: 24px;
+  }
+
+  .hydra-works-heading p {
+    font-size: 16px;
+  }
+
+  .hydra-works-heading p span {
+    display: unset;
+  }
+
+  .hwc-head h4 {
+    text-align: start;
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+
+  .hwc-head p {
+    font-size: 16px;
+    text-align: start;
+    padding-bottom: 20px;
+
+  }
+
+  .hwc-change .row {
+    flex-direction: column-reverse;
+  }
+
+  .hydra-works-content .row {
+    margin-bottom: 40px;
+  }
+
+  .hydra-meds-heading h2 {
+    font-size: 24px;
+  }
+
+  .hydra-meds-heading p {
+    font-size: 16px;
+  }
+
+  .hydra-meds-heading {
+    padding-top: 30px;
+  }
+
+  .htp-content .htp-con-padd {
+    padding-left: 0;
+  }
+
+  .htp-content .htp-content-padding {
+    padding-right: unset;
+    padding-left: unset;
+  }
+
+  .htp-content tbody td {
+    font-size: 12px;
+  }
+
+  .htp-content thead th {
+    font-size: 10px;
+  }
+
+  .htp-content tbody th {
+    font-size: 10px;
+  }
+
+  .hydra-circle {
+    padding: 30px 0;
+  }
+
+  .hydra-circle-logo {
+    padding-bottom: 40px;
+  }
+
+  .hydralast-featured-product-bg {
+    padding: 30px 0;
+  }
+
+  .hfp-heading h2 {
+    font-size: 24px;
+  }
+
+  .hfp-heading p {
+    font-size: 16px;
+  }
+
+  /* .hfp-content .col-md-6 {
+  padding-bottom: 0px;
+} */
+  .hfp-content-img h4 {
+    font-size: 20px;
+    margin: 16px 0;
+  }
+
+  .hfp-content-img p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .hfp-content-img a {
+    font-size: 16px;
+  }
+
+  .hydra-drink-heading-bg {
+    padding: 30px 0 10px 0;
+  }
+
+  .hydra-drink-heading h4 {
+    font-size: 24px;
+  }
+
+  .hydra-drink-para p {
+    font-size: 16px;
+  }
+
+  .hydra-innovative h4 {
+    font-size: 32px;
+  }
+
+  .hydra-innovative p {
+    font-size: 16px;
+
+  }
+
+  .hydra-innovative {
+    height: 370px;
+  }
+
+  .hydra-innovative-bg {
+    padding: 40px 0 40px 0;
+    margin-bottom: 40px;
+  }
+
+  .hydra-checkout h4 {
+    font-size: 24px;
+  }
+
+  .hydra-checkout h4 {
+    margin-bottom: 20px;
+  }
+
+  .hc-date {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .hc-heading h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .hc-heading p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .hydra-faq {
+    padding: 60px 0;
+  }
+
+  .hydra-faq-heading h2 {
+    font-size: 32px;
+  }
+
+  .hydra-faq-heading p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .hydra-faq-bg .accordion-button {
+    font-size: 16px;
+  }
+
+  .hydra-faq-bg .accordion-item {
+    padding: 15px 10px;
+  }
+
+  .hydra-faq-bg .accordion-body {
+    font-size: 14px;
+    padding: 15px 0px 0 0px;
+  }
+
+  .hydra-faq-contact {
+    padding-top: 10px;
+  }
+
+  .hydra-faq-contact h2 {
+    font-size: 24px;
+  }
+
+  .hydra-faq-contact p {
+    font-size: 16px;
+  }
+
+  .hydra-faq-contact a {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .contact-info-bg {
+    padding: 40px 0;
+  }
+
+  .hydra-number-bg {
+    padding-top: 20px;
+    padding-left: 20px;
+    height: unset;
+  }
+
+  .hydra-number-contact h4 {
+    font-size: 24px;
+  }
+
+  .hydra-number-contact p {
+    margin-bottom: 30px;
+  }
+
+  .hydra-contact-number {
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .hydra-contact-number a {
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  .contact-info {
+    gap: 40px;
+  }
+
+  .bfl-ipt input {
+    font-size: 14px;
+  }
+
+  .hnm-mail {
+    gap: 30px;
+  }
+
+  .hmn-button button {
+    font-size: 16px;
+  }
+
+  .hydra-content h4 {
+    font-size: 20px;
+  }
+
+  .hydra-content ul li {
+    font-size: 16px;
+  }
+
+  .hydra-content ul {
+    gap: 0px;
+  }
+
+  .hydra-content ul li a {
+    gap: 10px;
+  }
+
+  .hydra-content ul li a svg {
+    width: 20px;
+  }
+
+  .footer-right-link a,
+  .frb-heading h4 {
+    font-size: 12px;
+  }
+
+  .footer-right-bg {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .footer-right-link {
+    gap: 10px;
+  }
+
+  .hydra-footer {
+    padding-bottom: 10PX;
+    padding-top: 10px;
+  }
+
+  .footer-right-bg {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .x-mobile-header-menu {
+    padding: 10px 0;
+  }
+
+  .x-mobile-header-img a img {
+    width: 70%;
+  }
+  .hdm-medi {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.hdm-medi img {
+  margin-bottom: 10px;
+}
+.hdm-medi h4 {
+  font-size: 28px;
+  padding-bottom: 0;
+}
+.hdm-medi p {
+  font-size: 14px;
+}
+.hydra-innovative:after {
+  top: 0;
+  left: 50px;
+}
+.hydra-innovative::before {
+  bottom: -30px;
+}
+.hydralast-paragraph p {
+  padding-bottom: 20px;
+}
+.x-mobile-header-hide-menu-list ul {
+  gap: 15px;
+}
+.ingredient h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+.ingredient-row h4 {
+  font-size: 25px;
+}
+.ingredient-grape h6 {
+  font-size: 20px;
+}
+.ingredient-grape {
+  padding-top: 0;
+}
+.ingredient-grape p {
+  font-size: 16px;
+}
+}

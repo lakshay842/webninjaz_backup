@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Futura Now Headline';
+}
+
+/* @media (min-width : 1280px) {
+    .container {
+        max-width: 1640px;
+    }
+} */
+
+
+.alcohol-permit-contact-hdbg.alcohol-permit-hdbg {
+    background-image: url(../images/header-bg-contact.png);
+}
+
+/* Banner-section-end */
+
+/* ========Contact-section  */
+.contact {
+    position: relative;
+    background-color:
+        rgba(216, 216, 216, 1);
+}
+
+.cnt-bg-img {
+    
+    max-width: 50%;
+    height: 1116px;
+    background-image: url('../images/cnt-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cnt-info {
+    position: absolute;
+    left: 25%;
+    top: 92px;
+    display: flex;
+    gap: 53px;
+}
+
+/* ========Form-section  */
+.inquri {
+    width: 514px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 24px;
+    max-height: 742px;
+}
+
+.inquri h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #646464;
+    margin: 0;
+}
+
+/* ============Contact cards  */
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.card-name p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 70, 0, 1);
+    line-height: 1.2;
+}
+
+.card-name span {
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(100, 100, 100, 1);
+    line-height: 1.1;
+}
+
+
+
+.card-info {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.card-1 {
+    padding: 7px 30px;
+    background-color:
+        rgba(244, 244, 244, 1);
+    border-radius: 16px;
+    display: flex;
+    gap: 24px;
+
+}
+
+.card-loca p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color:
+        rgba(100, 100, 100, 1);
+}
+
+.card-loca span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    color:
+        rgba(150, 150, 150, 1);
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-links a {
+    padding: 11px 24px;
+    border: 1px solid rgba(216, 216, 216, 1);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    color:
+        rgba(50, 50, 50, 1);
+    width: 221px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+}
+
+
+
+/* ========Message-box */
+.msg {
+    max-width: 599px;
+    height: max-content;
+    background-color: white;
+    padding: 30px;
+    border-radius: 24px;
+
+}
+
+/* .msg-top {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+} */
+
+.msg-head {
+    max-width: 573px;
+    position: relative;
+}
+
+
+
+.msg-head h5 {
+    font-size: 20px;
+    font-weight: 800;
+    /* line-height: 1.1; */
+    color: black;
+    margin-bottom: 12px;
+}
+
+.msg-top p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 1.7; */
+    color:
+        #646464;
+}
+
+
+.msg-frm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.msg-info input {
+    padding: 12.5px 14px;
+    font-size: 16px;
+    font-weight: 400;
+    color:
+        rgba(50, 50, 50, 1);
+    width: 100%;
+    background: none;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid rgba(150, 150, 150, 1);
+}
+
+.msg-info input:hover {
+    border: 1px solid rgba(251, 36, 36, 1);
+}
+
+.msg-info {
+    position: relative;
+}
+
+.msg-info label span {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 400;
+    color:
+        rgba(50, 50, 50, 1);
+    padding: 0 5px;
+    top: 40px;
+    left: 14px;
+}
+
+.msg-info label span {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.move-up {
+    transform: translateY(-28px);
+    color: rgba(100, 100, 100, 1);
+    background-color: white;
+    max-width: max-content;
+    border-radius: 3px;
+}
+
+
+.text-msg {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.text-msg label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.text-msg .fix-size {
+    padding-left: 10px;
+    border: 1px solid rgba(150, 150, 150, 1);
+    border-radius: 8px;
+    resize: none;
+    height: 120px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color:
+        rgba(50, 50, 50, 1);
+}
+
+.text-msg .fix-size:hover {
+    border: 1px solid rgba(251, 36, 36, 1);
+}
+
+.aggrement>p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.check-box {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.check-box p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.1;
+    font-family: Roboto;
+    color:
+        #969696;
+}
+
+.msg-frm button {
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: unset;
+    outline: none;
+    background-color: #FF4600;
+    color: white;
+    padding: 11.5px 14px;
+    border-radius: 8px;
+
+}
+
+/* ==============Addres-section  */
+
+.addr-sec {
+    margin-top: -175px;
+}
+
+.loca-logo-img {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.location {
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 30px 0px;
+    padding-bottom: 40px;
+    border-radius: 24px;
+    background-color: #323232;
+}
+
+.social-link {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.loco-addrs {
+    margin: 0 auto;
+}
+
+.loco-addrs img {
+    width: 100%;
+}
+
+.loco-add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.loco-add :nth-child(1) {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: white;
+}
+.loca-logo-img{
+    padding-bottom: 30px;
+}
+
+.loco-add :nth-child(2) {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+}
+
+/* =============Location-section  */
+.loca-container {
+    padding-top: 40px;
+}
+
+
+
+
+
+.loca-head h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.loca-head p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: rgba(10, 100, 100, 1);
+
+}
+
+.loca-map {
+    padding-top: 60px;
+    width: 100%;
+    height: 40vh;
+
+
+
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    z-index: -1;
+
+}
+
+/* ===================================media query */
+
+/* =========================1280px */
+
+@media (max-width : 1280px) {
+
+    .cnt-info {
+        position: absolute;
+        left: 7%;
+        top: 28px;
+    }
+
+    .msg {
+        margin-left: 0px;
+        max-width: 553px;
+        height: max-content;
+        background-color: white;
+        padding: 60px;
+        border-radius: 24px;
+    }
+
+    .msg-head::after {
+        right: -6%;
+    }
+}
+
+/* ======================================1024px */
+@media (max-width : 1024px) {
+    .inquri {
+        /* max-width: 514px; */
+        margin-top: 30px;
+    }
+
+    .cnt-info {
+        position: unset;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .cnt-bg-img {
+        max-width: 100%;
+        height: unset;
+    }
+
+    .msg {
+        margin-bottom: 30px;
+    }
+
+    .addr-sec {
+        margin-top: 30px;
+    }
+
+    /* .loca-container {
+        padding-top: 30px;
+    } */
+}
+
+/* ==============767px */
+@media (max-width : 767px) {
+    .inquri {
+        padding: 30px 15px;
+    }
+
+    .inquri h3 {
+        font-size: 28px;
+    }
+
+    .inquri {
+        gap: 20px;
+        width: max-content;
+        max-height: unset;
+    }
+
+    .card-name p {
+        font-size: 18px;
+    }
+
+    .card-name span {
+        font-size: 12px;
+    }
+
+    .card-info {
+        padding-top: 20px;
+    }
+
+    .card-1 {
+        padding: 10px 15px;
+        width: max-content;
+    }
+
+    .card-loca p {
+        font-size: 18px;
+    }
+
+    .card-loca span {
+        font-size: 12px;
+    }
+
+    .card-links {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-links a {
+        text-align: center;
+    }
+
+
+    .msg {
+        padding: 30px;
+        max-width: 314px;
+    }
+
+    .msg-head h5 {
+        text-align: center;
+    }
+
+    .msg-head::after {
+        display: none;
+    }
+
+    .msg-head::before {
+        display: none;
+    }
+
+    .msg-top p {
+        /* font-size: 18px; */
+        text-align: center;
+    }
+
+    .msg-frm {
+        gap: 15px;
+    }
+
+    .text-msg label {
+        font-size: 18px;
+
+    }
+
+    .aggrement>p {
+        font-size: 18px;
+    }
+
+    .loca-logo-img {
+        text-align: center;
+    }
+
+    .loca-logo-img img {
+        width: 80%;
+    }
+
+    .loco-add :nth-child(1) {
+        font-size: 18px;
+    }
+
+    .loco-add :nth-child(2) {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .loca-head::after {
+        display: none;
+    }
+
+    .loca-head::before {
+        display: none;
+    }
+
+ 
+
+    .loca-head p {
+        font-size: 16px;
+        line-height: unset;
+
+    }
+
+    .loca-map {
+        padding-top: 40px;
+    }
+}

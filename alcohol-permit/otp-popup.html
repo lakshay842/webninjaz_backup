@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP-PopUp</title>
+    <!-- fonts -->
+    <link rel="stylesheet" href="./fonts/futura-now/stylesheet.css">
+</head>
+<style>
+    #otp-popup {
+        background-color: #ffffff;
+        width: 560px;
+        font-family: 'Futura Now Headline';
+        color: #646464;
+        padding: 10px 30px;
+        border-radius: 24px;
+        position: relative;
+        top: 75px;
+        margin: auto;
+    }
+
+    .otp-heading {
+        display: flex;
+        gap: 20px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .otp-form-elements {
+        color: #323232;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px 0px 0px;
+        border-top: 1.5px solid #D8D8D8;
+        border-bottom: 1.5px solid #D8D8D8;
+        padding: 30px 0 0 0;
+    }
+    .otp-form-elements > p{
+        margin: 0;
+        font-weight: 500;
+        font-size:16px;
+    }
+
+    .otp-input {
+        width: 56px;
+        height: 56px;
+        border-radius: 8px;
+        border: 1px solid #969696;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .otp-sub-button {
+        background-color: #FF4600;
+        color: #FFFFFF;
+        font-size: 20px;
+        border-radius: 8px;
+        border: 1px solid #FF4600;
+        padding: 16.5px 60px 16.5px 60px;
+        cursor: pointer;
+    }
+
+    .otp-fields {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .otp-sub-sec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    .otp-sub-sec div a {
+        color: #FF4600;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .otp-numbers {
+        display: flex;
+        gap: 20px;
+        margin: 10px 0;
+    }
+
+    .time-remaining {
+        color: #FF4600;
+    }
+
+    #close-popup {
+        position: absolute;
+        top: -7px;
+        right: -5px;
+        font-size: 16px;
+    }
+</style>
+
+<body style="background-color: black;">
+    <div id="otp-popup">
+        <div id="close-popup">
+            <img src="./images/cross.svg" alt="">
+        </div>
+        <div class="otp-heading">
+            <img src="./images/tabler_chevron-up.svg" alt="">
+            <p class="otp-popup-heading">Confirm your number</p>
+        </div>
+        <form id="otp-form">
+            <div class="otp-form-elements">
+                <p>Enter the code we've sent via SMS to +91 9627898516 :</p>
+                <div class="otp-fields">
+                    <div class="otp-numbers">
+                        <input class="otp-input" type="text" maxlength="1" required>
+                        <input class="otp-input" type="text" maxlength="1" required>
+                        <input class="otp-input" type="text" maxlength="1" required>
+                        <input class="otp-input" type="text" maxlength="1" required>
+                    </div>
+                    <div class="time-remaining">00:59s</div>
+                </div>
+            </div>
+            <div class="otp-sub-sec">
+                <div><a href="#">More Options</a></div>
+                <button class="otp-sub-button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('.otp-input');
+            inputs.forEach((input, index) => {
+                input.addEventListener('input', () => {
+                    if (input.value.length === 1 && index < inputs.length - 1) {
+                        inputs[index + 1].focus();
+                    }
+                });
+
+                input.addEventListener('keydown', (e) => {
+                    if (e.key === 'Backspace' && index > 0 && input.value.length === 0) {
+                        inputs[index - 1].focus();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Futura Now Headline';
+}
+
+@media (min-width : 1280px) {
+    .container {
+        max-width: 1640px;
+    }
+}
+
+
+/* ===========Banner-section  */
+.eval-bg-img {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('../images/Eval-bnr-img.png');
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.eval-bnr-head {
+    position: relative;
+    /* max-width: 720px; */
+    text-align: center;
+    padding-top: 180px;
+    /* padding-bottom: 240px; */
+}
+
+.eval-bnr-head::before {
+    content: ' ';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: white;
+    top: 100%;
+    left: 27%;
+    transform: translate(0px, -24px);
+
+}
+
+.eval-bnr-head::after {
+    content: ' ';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: white;
+    top: 100%;
+    right: 27%;
+    transform: translate(0px, -20px);
+
+}
+
+.eval-bnr-head h2 {
+
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: white;
+}
+
+
+/* ================Modal-section */
+.modal-content {
+    margin: auto;
+    position: relative;
+    top: -126px;
+    max-width: 729px;
+    border-radius: 32px;
+    padding: 80px;
+    background-color: white;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==========Thank -section  */
+.thank{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.thank-head{
+    text-align: center;
+}
+.thank-head::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: black;
+    top: 20%;
+    left: 26%;
+    transform: translate(10px, 13px);
+}
+.thank-head::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: black;
+    top: 20%;
+    right: 26%;
+    transform: translate(-15px, 13px);
+}
+
+.thank-head h2{
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+.thank-head p{
+    margin: 0;
+    padding-top: 16px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: 
+    rgba(150, 150, 150, 1);
+
+}
+.thank p{
+    
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgba(100, 100, 100, 1);
+}
+
+.back-btn{
+    margin-top: 40px;
+    padding: 14px 18px;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    border-radius:8px ;
+    border: 1px solid 
+    rgba(255, 70, 0, 1);
+    text-decoration: none;
+    color: rgba(255, 70, 0, 1);
+}

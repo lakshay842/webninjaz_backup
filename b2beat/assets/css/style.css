@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidepanel {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 100%;
+    background: #B89427;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.sidepanel a:not(:first-child):hover {
+    color: #EEB405;
+    background-color: #fff;
+}
+.sidepanel a:hover {
+    color: #F3C6C6;
+}
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.hide-sidebar {
+    padding: 10px;
+    border-bottom: 1px solid #FECE39;
+}
+.openbtn {
+    font-size: 35px;
+    cursor: pointer;
+    background: transparent;
+    color: #EEB405;
+    border: none;
+    margin-top: -10px;
+    float: right;
+}
+
+.openbtn:hover {
+    color: #FFC100;
+    
+}
+
+.header-b2beat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-image{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.header-image img{
+    max-width: 200px;
+    max-height: 50px;
+}
+.header-list ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 0;
+}
+.header-list ul li a{
+    text-decoration: none;
+}
+.header-list{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.header-background{
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+}
+.header-image .header-search{
+    width: 400px;
+    height: 50px;
+    padding: 24px 18px;
+    border-radius: 2px;
+background: #F1F1F1;
+border: none;
+box-shadow: none;
+}
+.header-image .header-search::placeholder{
+    color: #777;
+font-family: 'Inter';
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 160%; /* 25.6px */
+}
+.header-list ul li a{
+    color: #000;
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.login-signup button{
+    color: #025DB8;
+    font-family: 'Manrope';
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.login-signup{
+    border-radius: 2px;
+border: 1px solid #025DB8;
+}
+
+
+
+
+
+/* =========discover======= */
+
+.beat-resources{
+    padding-top: 80px;
+}
+/* .beat-discover{
+
+} */
+.beat-discover h5,
+.beat-marketplace h5,
+.beat-compare h5,
+.beat-benefits h5,
+.beat-recent h5,
+.beat-environment h5{
+    color: #EA981C;
+    font-family: 'Manrope';
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+padding: 10px 20px;
+border-radius: 2px;
+background: rgba(255, 180, 68, 0.08);
+align-items: center;
+gap: 12px;
+max-width: 267px;
+}
+.beat-discover-image img{
+    width: 100%;
+}
+.beat-discover h1{
+    color: #16222E;
+font-family: 'Manrope';
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+padding-top: 24px;
+padding-bottom: 47px;
+}
+.beat-discover h1 span{
+    color: #FFB444;
+border-bottom: 3px solid #FFB444;
+}
+.beat-discover p{
+    color: #444;
+    font-family: Inter;
+    max-width: 467px;
+    padding-bottom: 58px;
+}
+.beat-resources .row{
+    align-items: center;
+}
+.beat-resources  .beat-search{
+    width: 580px;
+    height: 60px;
+    padding: 24px;
+    border-radius: 2px;
+background: #F1F1F1;
+border: none;
+box-shadow: none;
+}
+.beat-resources  .beat-search::placeholder{
+    color: #777;
+font-family: 'Inter';
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+}
+.beat-search-svg{
+    background-color: black;
+    display: flex;
+    height: 60px;
+    padding: 24px 32px;
+    align-items: center;
+    border-radius: 2px;
+background: #025DB8;
+cursor: pointer;
+}
+.beat-search-form{
+    display: flex;
+   
+}
+.beat-example h4{
+    color: rgba(0, 0, 0, 0.34);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+}
+.beat-example{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: center;
+}
+.beat-example h6{
+    display: flex;
+    padding: 12px 14px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 2px;
+background: rgba(2, 93, 184, 0.06);
+}
+.beat-resources-background{
+    position: relative;
+    padding-bottom: 100px;
+}
+.beat-resources::after{
+    content: url(/assets/images/discover-img-1.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+}
+.beat-discover::before{
+    content: url(/assets/images/discover-img-2.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
+.awards{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.awards .item img{
+    width: auto;
+    margin: 0 auto;
+}
+.owl-dots{
+    display: none;
+}
+.awards-background{
+    background: #F8F8F8;
+}
+
+
+/* =======marletplace====== */
+
+.beat-marketplace{
+    text-align: center;
+    padding-top: 100px;
+}
+.beat-marketplace h5{
+    max-width: 276px;
+    margin: 0 auto;
+}
+.beat-marketplace h2,
+.beat-benefits h2{
+    color: #000;
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: capitalize;
+    max-width: 426px;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+.beat-marketplace-list ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.beat-marketplace-list ul li a{
+    text-decoration: none;
+    color: #444;
+font-family: 'Manrope';
+font-weight: 500;
+border-radius: 2px;
+border: 1px dashed #025DB8;
+background: rgba(2, 93, 184, 0.06);
+display: flex;
+height: 44px;
+padding: 16px 24px;
+align-items: center;
+}
+.beat-marketplace-list{
+    padding-top: 48px;
+    padding-bottom: 90px;
+}
+.beat-marketplace-list ul li.active a {
+    color: #025DB8;
+}
+
+
+
+/* =====reviews===== */
+
+.beat-reviews{
+    border-radius: 2px;
+background: #F8F8F8;
+text-align: center;
+}
+.beat-reviews-image img{
+    background: white;
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: -45px;
+    filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.10));
+}
+.beat-reviews h5{
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    color: #000;
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.beat-reviews h3{
+ margin-bottom: 0;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ color: #000;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.beat-reviews p{
+    padding-top: 5px;
+    color: #000;
+    font-family: 'Manrope';
+    font-size: 14px;
+}
+.beat-reviews h5 svg{
+    margin-top: -1px;
+}
+.beat-review-main .col-lg-3{
+    padding-bottom: 85px;
+}
+
+
+
+/* ======compare==== */
+
+.beat-compare{
+    padding-right: 140px;
+}
+.beat-compare h5{
+    color: white;
+    background: rgba(255, 255, 255, 0.06);
+    max-width: 261px;
+
+}
+.beat-compare-image{
+    background-color: #025DB8;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.beat-compare h2{
+    color: #FFF;
+    font-family: 'Manrope';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: capitalize;
+    max-width: 486px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+.beat-compare-list{
+    display: flex;
+    gap: 24px;
+    padding-bottom: 48px;
+}
+.beat-compare-list-text h4{
+    color: #FFF;
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 700;
+}
+.beat-compare-list-text p{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: 'Inter';
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.beat-compare-side img{
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+.beat-compare-image::after{
+    content: url(/assets/images/compare-2.png);
+    position: absolute;
+   right: 0;
+   bottom: -80px;
+}
+
+/* =====benefit==== */
+
+.beat-benefits h2{
+max-width: 576px;
+padding-bottom: 60px;
+}
+.beat-benefits h5{
+    margin: 0 auto;
+}
+.beat-benefits{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.beat-benefits-text{
+    border-radius: 2px;
+border: 1px solid #E1E1E1;
+background: #FFF;
+padding: 60px;
+}
+.beat-benefits-text-content h3{
+    color: #222;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding-top: 34px;
+    padding-bottom: 24px;
+}
+.beat-benefits-text-content p{
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Inter;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+/* .beat-benefits-text-content{
+    border-right: 2px solid red;
+    padding-left: 15px;
+} */
+.beat-benefits-text-content{
+    position: relative;
+}
+.beat-benefits-text-content::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 202px;
+    background-color: #E1E1E1;
+    right: 0;
+    top: 0;
+}
+/* :not(:last-child) */
+/* =====recent===== */
+
+.beat-recent h5{
+    color: #FFF;
+background: rgba(255, 255, 255, 0.06);
+}
+.beat-recent-background{
+    background-color: #263C51;
+    position: relative;
+}
+.beat-recent-background::after{
+    content: url(/assets/images/recent-bg-img.png);
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+}
+.beat-recent h2{
+    color: #FFF;
+    font-family: 'Manrope';
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: capitalize;
+    max-width: 595px;
+    padding-top: 10px;
+}
+.beat-product h3{
+    color: #FFF;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(2, 93, 184, 0.20);
+    padding: 24px 32px;
+    margin-bottom: 0;
+}
+.beat-recent{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.beat-recent-review-content p{
+    color: #FFF;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-top: 38px;
+}
+.beat-recent-review-content h5{
+    color: white;
+    font-family: Manrope;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 700;
+    padding-top: 32px;
+}
+.beat-recent-review-content{
+    text-align: center;
+    border-radius: 2px;
+background: #1A2C3E;
+padding: 0 32px 40px 32px;
+margin-bottom: 100px;
+}
+.beat-recent-review-image img{
+    background: white;
+    filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.10));
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: -43px;
+}
+.beat-recent-review{
+    padding-top: 100px;
+}
+
+/* =======environment========= */
+.beat-environment h2{
+    color: #000;
+font-family: 'Manrope';
+font-size: 64px;
+font-style: normal;
+font-weight: 800;
+text-transform: capitalize;
+margin-bottom: 0;
+}
+.beat-environment h6{
+    color: rgba(0, 0, 0, 0.80);
+font-family: Inter;
+font-size: 16px;
+margin-bottom: 0;
+padding-top: 35px;
+padding-bottom: 35px;
+}
+.beat-environment-content p{
+    color: rgba(0, 0, 0, 0.60);
+font-family: 'Inter';
+font-size: 15px;
+margin-bottom: 0;
+
+}
+.beat-environment-content{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+@media only screen and (max-width: 575px){
+    .header-b2beat{
+        display: none;
+    }
+}

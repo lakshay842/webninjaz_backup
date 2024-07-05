@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- header start -->
+    <header class="header abt-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="/"><img src="./assets/images/abt-logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                            <path d="M1 1L7 7L13 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Case studies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Rent or buy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                  </li>
+                </ul>
+                <div class="right-social-media">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17" fill="none">
+                            <path d="M5.7809 9.49719H7.84551L8.67135 6.19382H5.7809V4.54213C5.7809 3.69203 5.7809 2.89045 7.43258 2.89045H8.67135V0.115701C8.40237 0.0799829 7.38551 0 6.31183 0C4.07008 0 2.47753 1.36831 2.47753 3.88122V6.19382H0V9.49719H2.47753V16.5169H5.7809V9.49719Z" fill="#111111"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
+                            <path d="M8.86122 0.652054C9.3023 0.654482 10.4059 0.665152 11.5784 0.712117L11.9941 0.730244C13.1747 0.786138 14.3542 0.881622 14.9393 1.04474C15.7196 1.26396 16.3329 1.90362 16.5402 2.71445C16.8703 4.00201 16.9116 6.51504 16.9167 7.12319L16.9175 7.24922V7.25805C16.9175 7.25805 16.9175 7.26111 16.9175 7.26697L16.9167 7.393C16.9116 8.00115 16.8703 10.5142 16.5402 11.8018C16.3301 12.6155 15.7167 13.2552 14.9393 13.4714C14.3542 13.6346 13.1747 13.73 11.9941 13.7859L11.5784 13.804C10.4059 13.851 9.3023 13.8617 8.86122 13.8641L8.66764 13.8648H8.65905C8.65905 13.8648 8.65616 13.8648 8.65046 13.8648L8.45705 13.8641C7.52352 13.859 3.62027 13.8168 2.37886 13.4714C1.59851 13.2522 0.985172 12.6126 0.777844 11.8018C0.447779 10.5142 0.40652 8.00115 0.401367 7.393V7.12319C0.40652 6.51504 0.447779 4.00201 0.777844 2.71445C0.988046 1.90061 1.60138 1.26096 2.37886 1.04474C3.62027 0.699317 7.52352 0.657191 8.45705 0.652054H8.86122ZM7.00737 4.36764V10.1485L11.9624 7.25805L7.00737 4.36764Z" fill="#111111"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <path d="M3.95185 2.4779C3.95154 3.1504 3.54355 3.75556 2.92026 4.00802C2.29696 4.2605 1.58283 4.10987 1.1146 3.62716C0.646373 3.14445 0.517558 2.42606 0.788889 1.81074C1.06023 1.19542 1.67753 0.806043 2.34971 0.826218C3.24251 0.853017 3.95225 1.58471 3.95185 2.4779ZM4.0014 5.35184H0.698029V15.6914H4.0014V5.35184ZM9.22074 5.35184H5.93387V15.6914H9.18771V10.2656C9.18771 7.24299 13.127 6.9622 13.127 10.2656V15.6914H16.3891V9.14243C16.3891 4.047 10.5586 4.23695 9.18771 6.73923L9.22074 5.35184Z" fill="#111111"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <path d="M9.22581 0.000305176C10.1552 0.00184124 10.6262 0.00676329 11.0332 0.0188784L11.1935 0.0241143C11.3786 0.0306962 11.5613 0.0389546 11.7815 0.0492776C12.6603 0.0898843 13.2598 0.228898 13.7863 0.433294C14.3306 0.643199 14.7903 0.926735 15.2493 1.38577C15.7077 1.8448 15.9913 2.30589 16.2019 2.84888C16.4055 3.37467 16.5446 3.97479 16.5859 4.85362C16.5957 5.07384 16.6036 5.25652 16.6102 5.44171L16.6154 5.602C16.6274 6.00892 16.633 6.47997 16.6347 7.40941L16.6353 8.02516C16.6354 8.10039 16.6354 8.17802 16.6354 8.25813L16.6353 8.4911L16.6349 9.10693C16.6333 10.0363 16.6284 10.5074 16.6163 10.9143L16.611 11.0746C16.6045 11.2598 16.5962 11.4425 16.5859 11.6627C16.5452 12.5415 16.4055 13.1409 16.2019 13.6674C15.9919 14.2118 15.7077 14.6715 15.2493 15.1305C14.7903 15.5889 14.3285 15.8724 13.7863 16.083C13.2598 16.2867 12.6603 16.4257 11.7815 16.467C11.5613 16.4768 11.3786 16.4848 11.1935 16.4913L11.0332 16.4965C10.6262 16.5086 10.1552 16.5141 9.22581 16.5159L8.60998 16.5166C8.53474 16.5166 8.45711 16.5166 8.37701 16.5166H8.14404L7.5282 16.516C6.5988 16.5145 6.12776 16.5095 5.72082 16.4974L5.56054 16.4922C5.37535 16.4856 5.19267 16.4773 4.97245 16.467C4.09362 16.4265 3.49488 16.2867 2.96772 16.083C2.42403 15.8731 1.96363 15.5889 1.5046 15.1305C1.04557 14.6715 0.76272 14.2097 0.55213 13.6674C0.347734 13.1409 0.209405 12.5415 0.168113 11.6627C0.158302 11.4425 0.1503 11.2598 0.143817 11.0746L0.138622 10.9143C0.12654 10.5074 0.121032 10.0363 0.119248 9.10693L0.119141 7.40941C0.120677 6.47997 0.12559 6.00892 0.137706 5.602L0.14295 5.44171C0.149532 5.25652 0.15779 5.07384 0.168113 4.85362C0.208712 3.97409 0.347734 3.37536 0.55213 2.84888C0.762026 2.30521 1.04557 1.8448 1.5046 1.38577C1.96363 0.926735 2.42473 0.643884 2.96772 0.433294C3.49419 0.228898 4.09293 0.0905697 4.97245 0.0492776C5.19267 0.0394748 5.37535 0.0314725 5.56054 0.0249897L5.72082 0.019795C6.12776 0.00770461 6.5988 0.0021963 7.5282 0.000412484L9.22581 0.000305176ZM8.37701 4.12894C6.09527 4.12894 4.24778 5.97844 4.24778 8.25813C4.24778 10.5398 6.09728 12.3873 8.37701 12.3873C10.6587 12.3873 12.5062 10.5379 12.5062 8.25813C12.5062 5.97643 10.6567 4.12894 8.37701 4.12894ZM8.37701 5.78063C9.74535 5.78063 10.8545 6.88946 10.8545 8.25813C10.8545 9.62647 9.74568 10.7357 8.37701 10.7357C7.00867 10.7357 5.89946 9.62688 5.89946 8.25813C5.89946 6.88979 7.00826 5.78063 8.37701 5.78063ZM12.7127 2.89018C12.1434 2.89018 11.6804 3.35257 11.6804 3.92178C11.6804 4.49099 12.1428 4.9541 12.7127 4.9541C13.2818 4.9541 13.745 4.49171 13.745 3.92178C13.745 3.35257 13.2811 2.88947 12.7127 2.89018Z" fill="#111111"/>
+                        </svg>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Banner start -->
+    <section class="abt-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="abtban-cont cst-cont">
+                        <h3>Case Studies</h3>
+                        <p>Our trained laser technicians and fleet of laser cleaning machines are a mobile first service. We bring the solution to you.</p>
+                        <img src="./assets/images/case-study.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="ilc-service case-gallary">
+        <div class="container">
+            <div class="row row1">
+                <div class="col-md-4">
+                    <div class="ilcg-cont">
+                        <img src="./assets/images/case1.png" alt="">
+                        <h4>Laser Cleaning Crank And Conrod</h4>
+                        <p>Laser Cleaning 18 tonne Crankshaft Cranked out another one  Introduction In the heavy machinery sector, precision and cost-effectiveness are of paramount importance...</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ilcg-cont">
+                        <img src="./assets/images/case2.png" alt="">
+                        <h4>UWA Large Soot Removal Job</h4>
+                        <p>Large soot removal scope at University of WA Excellent soot removal Laser Cleaning at the University of Western Australia Introduction In July 2023, a fire at...</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ilcg-cont">
+                        <img src="./assets/images/case3.png" alt="">
+                        <h4>14 Day Major Shut</h4>
+                        <p>Major shutdown NDT prep 14 day major shut Project Laser took the lead in conducting a comprehensive cleaning operation on two pressure vessels during a pivotal...</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ndt surface prep section -->
+    <section class="ndt-surface abt-surface">
+        <div class="slides owl-theme owl-carousel">
+            <div class="item">
+                <div class="ndt-slider">
+                    <div class="ndt-content ndt-content1">
+                        <span>services we offer</span>
+                        <h4>NDT surface preparation</h4>
+                        <p>Prepare surfaces prior to dye penetrant and magnetic particle testing, especially in confined spaces and on lifting equipment. NATA Accredited NDT Inspection packages available. Laser cleaning provides precise and deep cleaning without smearing or surface alteration.</p>
+                        <p>It vaporizes surface contamination and removes particulates from defects, leaving an ideal surface for testing. Project Laser selectively removes corrosion, paint, soot, oil, grease, and other contaminants before NDT inspection.</p>
+                        <div class="ndt-btndiv">
+                            <a href="#">
+                                Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                    <path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ndt-content">
+                        <img src="./assets/images/ndt1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ndt-slider">
+                    <div class="ndt-content ndt-content1">
+                        <span>services we offer</span>
+                        <h4>Industrial Laser Cleaning</h4>
+                        <p>Offering environmentally friendly removal of coatings, residues, and contaminants, our laser cleaning services cater to diverse industries. Specializing in weld cleaning, corrosion removal, and equipment maintenance, we employ cutting-edge technology to tackle various surfaces.</p>
+                        <p>With a commitment to customized solutions and mobile service, our process is minimally disruptive, ideal for time-sensitive projects, such as shutdowns, ensuring efficient and dust-free results.</p>
+                        <div class="ndt-btndiv">
+                            <a href="#">
+                                Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                    <path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ndt-content">
+                        <img src="./assets/images/ndt2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ndt-slider">
+                    <div class="ndt-content ndt-content1">
+                        <span>services we offer</span>
+                        <h4>Coating Removal</h4>
+                        <p>Our dustless process selectively eliminates coatings and protective layers, capturing particles with our extraction systems. Project Laser precisely removes coatings and residues from various surfaces like metals, wood, and masonry.</p>
+                        <p>Using lasers avoids abrasive and chemical methods, making it ideal for on-site, in situ coating removal. This approach potentially reduces expenses associated with encapsulation and disposal of blast media, offering an efficient solution.</p>
+                        <div class="ndt-btndiv">
+                            <a href="#">
+                                Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                    <path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ndt-content">
+                        <img src="./assets/images/ndt3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ndt-slider">
+                    <div class="ndt-content ndt-content1">
+                        <span>services we offer</span>
+                        <h4>Soot Removal</h4>
+                        <p>It refers to the process of cleaning and eliminating soot deposits from various surfaces. Soot is a black powdery or flaky substance composed primarily of carbon, produced by incomplete combustion of organic matter.</p>
+                        <p>It is commonly found in the exhaust emissions of vehicles, industrial processes, and residential heating systems. Soot accumulates on walls, ceilings, chimneys, vents, and household items, causing stains and potential health hazards due to its association with pollutants and toxins.</p>
+                        <div class="ndt-btndiv">
+                            <a href="#">
+                                Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                    <path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ndt-content">
+                        <img src="./assets/images/ndt4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ndt-slider">
+                    <div class="ndt-content ndt-content1">
+                        <span>services we offer</span>
+                        <h4>Corrosion Removal</h4>
+                        <p>Corrosion removal is the process of eliminating or mitigating the effects of corrosion on various materials, particularly metals. Corrosion is the gradual degradation of materials, often due to chemical reactions with their environment.</p>
+                        <p>This process weakens the material, undermines its structural stability, and shortens its lifespan. Therefore, the goal of corrosion removal is to halt or reverse this degradation, preserving the integrity and durability of the affected materials.</p>
+                        <div class="ndt-btndiv">
+                            <a href="#">
+                                Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                    <path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ndt-content">
+                        <img src="./assets/images/ndt5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ndt-slider">
+                    <div class="ndt-content ndt-content1">
+                        <span>services we offer</span>
+                        <h4>Precision Equipment</h4>
+                        <p>Protect tollerances by utilising laser cleaning of rotating equipment and other precision components. The Future of Rotating Equipment, precision surface and fixed plant maintenance. Cleaning precision surfaces such as power generation turbines, gears, pinions, and other fixed plant is no easy feat.</p>
+                        <p>Traditional cleaning methods can be time-consuming, expensive, and even harmful to delicate surfaces. That’s where non-destructive laser cleaning technology comes in.</p>
+                        <div class="ndt-btndiv">
+                            <a href="#">
+                                Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                    <path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ndt-content">
+                        <img src="./assets/images/ndt6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paging">
+            <span class="index">01</span> /
+            <span class="count"></span>
+        </div>   
+    </section>
+
+    <!-- KNOW MORE Section -->
+    <section class="know-more abt-knowmore">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="km-cont1">
+                        <span>DROP US A LINE! BETTER YET, SEE US IN PERSON</span>
+                        <h4>For inquiries, discover, products or services</h4>
+                        <form action="">
+                            <input type="text" placeholder="Your name">
+                            <input type="email" placeholder="Your email">
+                            <input type="tel" placeholder="Mobile number">
+                            <input type="text" placeholder="Company">
+                            <textarea cols="10" rows="4" placeholder="Comment"></textarea>
+                            <button type="submit">
+                                Send Message
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                    <path d="M1 1L7 7L1 13" stroke="#1B1F4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="km-cont2">
+                        <span>get in touch</span>
+                        <h4>Feel free to get in touch with us!</h4>
+                        <div class="call-div">
+                            <span>Call</span>
+                            <a href="tel:+61 0402 759 024">+61 0402 759 024</a>
+                            <p>Mon-Sunday 24/7</p>
+                        </div>
+                        <div class="email-div">
+                            <span>Email</span>
+                            <a href="mailto:contact@projectlaser.com.au">contact@projectlaser.com.au</a>
+                        </div>
+                        <div class="service-location">
+                            <span>Serviced locations</span>
+                            <p>Mobile and catering to the whole of WA,
+                                with national wide capabilities.
+                            </p>
+                        </div>
+                        <div class="social-div">
+                            <span>Socials</span>
+                            <div class="sc-icon">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20" fill="none">
+                                        <path d="M7.2207 11.5H9.7207L10.7207 7.5H7.2207V5.5C7.2207 4.47062 7.2207 3.5 9.2207 3.5H10.7207V0.1401C10.395 0.09685 9.1637 0 7.8636 0C5.1491 0 3.2207 1.65686 3.2207 4.69971V7.5H0.220703V11.5H3.2207V20H7.2207V11.5Z" fill="#EE1E25"/>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                                        <path d="M10.9646 0.000488281C11.4987 0.00342828 12.835 0.0163483 14.2548 0.0732183L14.7582 0.0951681C16.1877 0.162848 17.616 0.278468 18.3244 0.475988C19.2693 0.741438 20.012 1.51599 20.263 2.49781C20.6627 4.0569 20.7127 7.09989 20.7189 7.83629L20.7198 7.98889V7.99959C20.7198 7.99959 20.7198 8.00329 20.7198 8.01039L20.7189 8.16299C20.7127 8.89939 20.6627 11.9424 20.263 13.5015C20.0085 14.4869 19.2658 15.2615 18.3244 15.5233C17.616 15.7208 16.1877 15.8364 14.7582 15.9041L14.2548 15.926C12.835 15.9829 11.4987 15.9958 10.9646 15.9988L10.7302 15.9996H10.7198C10.7198 15.9996 10.7163 15.9996 10.7094 15.9996L10.4752 15.9988C9.3448 15.9926 4.61842 15.9415 3.11521 15.5233C2.1703 15.2578 1.42762 14.4833 1.17657 13.5015C0.776903 11.9424 0.726943 8.89939 0.720703 8.16299V7.83629C0.726943 7.09989 0.776903 4.0569 1.17657 2.49781C1.4311 1.51235 2.17378 0.737808 3.11521 0.475988C4.61842 0.0577184 9.3448 0.00670828 10.4752 0.000488281H10.9646ZM8.71981 4.49963V11.4996L14.7198 7.99959L8.71981 4.49963Z" fill="#EE1E25"/>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M4.71978 2.00042C4.71941 2.81473 4.22538 3.54751 3.47064 3.85322C2.7159 4.15894 1.85117 3.97654 1.2842 3.39204C0.717227 2.80753 0.561247 1.93764 0.889797 1.19256C1.21836 0.447478 1.96584 -0.0240123 2.77978 0.000417671C3.86085 0.0328677 4.72027 0.918858 4.71978 2.00042ZM4.77978 5.48042H0.779776V18.0004H4.77978V5.48042ZM11.0998 5.48042H7.11978V18.0004H11.0598V11.4304C11.0598 7.77039 15.8298 7.43039 15.8298 11.4304V18.0004H19.7798V10.0704C19.7798 3.90042 12.7198 4.13042 11.0598 7.16039L11.0998 5.48042Z" fill="#EE1E25"/>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M11.8069 0.000488281C12.9323 0.00234828 13.5026 0.00830831 13.9954 0.0229783L14.1895 0.0293183C14.4137 0.0372883 14.6349 0.0472882 14.9016 0.0597882C15.9657 0.108958 16.6916 0.277288 17.3291 0.524788C17.9882 0.778958 18.5449 1.12229 19.1007 1.67813C19.6557 2.23396 19.9991 2.79229 20.2541 3.44979C20.5007 4.08646 20.6691 4.81313 20.7191 5.87729C20.731 6.14396 20.7406 6.36516 20.7485 6.5894L20.7548 6.78349C20.7694 7.27623 20.7761 7.84662 20.7782 8.97206L20.779 9.71766C20.7791 9.80876 20.7791 9.90276 20.7791 9.99976L20.779 10.2819L20.7784 11.0276C20.7765 12.153 20.7706 12.7234 20.7559 13.2161L20.7495 13.4102C20.7416 13.6345 20.7316 13.8557 20.7191 14.1223C20.6699 15.1865 20.5007 15.9123 20.2541 16.5498C19.9999 17.209 19.6557 17.7657 19.1007 18.3215C18.5449 18.8765 17.9857 19.2198 17.3291 19.4748C16.6916 19.7215 15.9657 19.8898 14.9016 19.9398C14.6349 19.9517 14.4137 19.9614 14.1895 19.9692L13.9954 19.9755C13.5026 19.9902 12.9323 19.9968 11.8069 19.999L11.0612 19.9998C10.9701 19.9998 10.8761 19.9998 10.7791 19.9998H10.497L9.7513 19.9991C8.6259 19.9973 8.05553 19.9913 7.56278 19.9766L7.36869 19.9703C7.14444 19.9623 6.92325 19.9523 6.65659 19.9398C5.59242 19.8907 4.86742 19.7215 4.22909 19.4748C3.57075 19.2207 3.01325 18.8765 2.45742 18.3215C1.90159 17.7657 1.55909 17.2065 1.30409 16.5498C1.05659 15.9123 0.889085 15.1865 0.839085 14.1223C0.827205 13.8557 0.817515 13.6345 0.809665 13.4102L0.803375 13.2161C0.788745 12.7234 0.782075 12.153 0.779915 11.0276L0.779785 8.97206C0.781645 7.84662 0.787595 7.27623 0.802265 6.78349L0.808615 6.5894C0.816585 6.36516 0.826585 6.14396 0.839085 5.87729C0.888245 4.81229 1.05659 4.08729 1.30409 3.44979C1.55825 2.79146 1.90159 2.23396 2.45742 1.67813C3.01325 1.12229 3.57159 0.779788 4.22909 0.524788C4.86659 0.277288 5.59159 0.109788 6.65659 0.0597882C6.92325 0.0479182 7.14444 0.0382283 7.36869 0.0303783L7.56278 0.0240881C8.05553 0.00944814 8.6259 0.00277822 9.7513 0.000618219L11.8069 0.000488281ZM10.7791 4.99979C8.01619 4.99979 5.77909 7.23932 5.77909 9.99976C5.77909 12.7627 8.01862 14.9998 10.7791 14.9998C13.542 14.9998 15.7791 12.7603 15.7791 9.99976C15.7791 7.23689 13.5395 4.99979 10.7791 4.99979ZM10.7791 6.99979C12.436 6.99979 13.7791 8.34246 13.7791 9.99976C13.7791 11.6567 12.4364 12.9998 10.7791 12.9998C9.12221 12.9998 7.77909 11.6572 7.77909 9.99976C7.77909 8.34286 9.12171 6.99979 10.7791 6.99979ZM16.0291 3.49979C15.3398 3.49979 14.7791 4.0597 14.7791 4.74894C14.7791 5.43819 15.339 5.99896 16.0291 5.99896C16.7183 5.99896 17.2791 5.43906 17.2791 4.74894C17.2791 4.0597 16.7174 3.49893 16.0291 3.49979Z" fill="#EE1E25"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-cont">
+                        <h4>get in touch</h4>
+                        <p>Servicing throughout WA and Australasian sales agents for 4Jet</p>
+                        <h5>Email</h5>
+                        <a href="mailto:contact@projectlaser.com.au">contact@projectlaser.com.au</a>
+                        <h5>phone</h5>
+                        <a href="tel:+61 0402 759 024">+61 0402 759 024</a>
+                        <h5>hours</h5>
+                        <span>Mon-Sunday 24/7</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-cont1">
+                        <img src="./assets/images/logo.png" alt="">
+                        <p>Project Laser is here to cater to all your specialist laser cleaning needs.</p>
+                        <div class="footer-social">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20" fill="none">
+                                    <path d="M7.2207 11.5H9.7207L10.7207 7.5H7.2207V5.5C7.2207 4.47062 7.2207 3.5 9.2207 3.5H10.7207V0.1401C10.395 0.09685 9.1637 0 7.8636 0C5.1491 0 3.2207 1.65686 3.2207 4.69971V7.5H0.220703V11.5H3.2207V20H7.2207V11.5Z" fill="#EE1E25"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                                    <path d="M10.9646 0.000488281C11.4987 0.00342828 12.835 0.0163483 14.2548 0.0732183L14.7582 0.0951681C16.1877 0.162848 17.616 0.278468 18.3244 0.475988C19.2693 0.741438 20.012 1.51599 20.263 2.49781C20.6627 4.0569 20.7127 7.09989 20.7189 7.83629L20.7198 7.98889V7.99959C20.7198 7.99959 20.7198 8.00329 20.7198 8.01039L20.7189 8.16299C20.7127 8.89939 20.6627 11.9424 20.263 13.5015C20.0085 14.4869 19.2658 15.2615 18.3244 15.5233C17.616 15.7208 16.1877 15.8364 14.7582 15.9041L14.2548 15.926C12.835 15.9829 11.4987 15.9958 10.9646 15.9988L10.7302 15.9996H10.7198C10.7198 15.9996 10.7163 15.9996 10.7094 15.9996L10.4752 15.9988C9.3448 15.9926 4.61842 15.9415 3.11521 15.5233C2.1703 15.2578 1.42762 14.4833 1.17657 13.5015C0.776903 11.9424 0.726943 8.89939 0.720703 8.16299V7.83629C0.726943 7.09989 0.776903 4.0569 1.17657 2.49781C1.4311 1.51235 2.17378 0.737808 3.11521 0.475988C4.61842 0.0577184 9.3448 0.00670828 10.4752 0.000488281H10.9646ZM8.71981 4.49963V11.4996L14.7198 7.99959L8.71981 4.49963Z" fill="#EE1E25"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                    <path d="M4.71978 2.00042C4.71941 2.81473 4.22538 3.54751 3.47064 3.85322C2.7159 4.15894 1.85117 3.97654 1.2842 3.39204C0.717227 2.80753 0.561247 1.93764 0.889797 1.19256C1.21836 0.447478 1.96584 -0.0240123 2.77978 0.000417671C3.86085 0.0328677 4.72027 0.918858 4.71978 2.00042ZM4.77978 5.48042H0.779776V18.0004H4.77978V5.48042ZM11.0998 5.48042H7.11978V18.0004H11.0598V11.4304C11.0598 7.77039 15.8298 7.43039 15.8298 11.4304V18.0004H19.7798V10.0704C19.7798 3.90042 12.7198 4.13042 11.0598 7.16039L11.0998 5.48042Z" fill="#EE1E25"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                    <path d="M11.8069 0.000488281C12.9323 0.00234828 13.5026 0.00830831 13.9954 0.0229783L14.1895 0.0293183C14.4137 0.0372883 14.6349 0.0472882 14.9016 0.0597882C15.9657 0.108958 16.6916 0.277288 17.3291 0.524788C17.9882 0.778958 18.5449 1.12229 19.1007 1.67813C19.6557 2.23396 19.9991 2.79229 20.2541 3.44979C20.5007 4.08646 20.6691 4.81313 20.7191 5.87729C20.731 6.14396 20.7406 6.36516 20.7485 6.5894L20.7548 6.78349C20.7694 7.27623 20.7761 7.84662 20.7782 8.97206L20.779 9.71766C20.7791 9.80876 20.7791 9.90276 20.7791 9.99976L20.779 10.2819L20.7784 11.0276C20.7765 12.153 20.7706 12.7234 20.7559 13.2161L20.7495 13.4102C20.7416 13.6345 20.7316 13.8557 20.7191 14.1223C20.6699 15.1865 20.5007 15.9123 20.2541 16.5498C19.9999 17.209 19.6557 17.7657 19.1007 18.3215C18.5449 18.8765 17.9857 19.2198 17.3291 19.4748C16.6916 19.7215 15.9657 19.8898 14.9016 19.9398C14.6349 19.9517 14.4137 19.9614 14.1895 19.9692L13.9954 19.9755C13.5026 19.9902 12.9323 19.9968 11.8069 19.999L11.0612 19.9998C10.9701 19.9998 10.8761 19.9998 10.7791 19.9998H10.497L9.7513 19.9991C8.6259 19.9973 8.05553 19.9913 7.56278 19.9766L7.36869 19.9703C7.14444 19.9623 6.92325 19.9523 6.65659 19.9398C5.59242 19.8907 4.86742 19.7215 4.22909 19.4748C3.57075 19.2207 3.01325 18.8765 2.45742 18.3215C1.90159 17.7657 1.55909 17.2065 1.30409 16.5498C1.05659 15.9123 0.889085 15.1865 0.839085 14.1223C0.827205 13.8557 0.817515 13.6345 0.809665 13.4102L0.803375 13.2161C0.788745 12.7234 0.782075 12.153 0.779915 11.0276L0.779785 8.97206C0.781645 7.84662 0.787595 7.27623 0.802265 6.78349L0.808615 6.5894C0.816585 6.36516 0.826585 6.14396 0.839085 5.87729C0.888245 4.81229 1.05659 4.08729 1.30409 3.44979C1.55825 2.79146 1.90159 2.23396 2.45742 1.67813C3.01325 1.12229 3.57159 0.779788 4.22909 0.524788C4.86659 0.277288 5.59159 0.109788 6.65659 0.0597882C6.92325 0.0479182 7.14444 0.0382283 7.36869 0.0303783L7.56278 0.0240881C8.05553 0.00944814 8.6259 0.00277822 9.7513 0.000618219L11.8069 0.000488281ZM10.7791 4.99979C8.01619 4.99979 5.77909 7.23932 5.77909 9.99976C5.77909 12.7627 8.01862 14.9998 10.7791 14.9998C13.542 14.9998 15.7791 12.7603 15.7791 9.99976C15.7791 7.23689 13.5395 4.99979 10.7791 4.99979ZM10.7791 6.99979C12.436 6.99979 13.7791 8.34246 13.7791 9.99976C13.7791 11.6567 12.4364 12.9998 10.7791 12.9998C9.12221 12.9998 7.77909 11.6572 7.77909 9.99976C7.77909 8.34286 9.12171 6.99979 10.7791 6.99979ZM16.0291 3.49979C15.3398 3.49979 14.7791 4.0597 14.7791 4.74894C14.7791 5.43819 15.339 5.99896 16.0291 5.99896C16.7183 5.99896 17.2791 5.43906 17.2791 4.74894C17.2791 4.0597 16.7174 3.49893 16.0291 3.49979Z" fill="#EE1E25"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-cont2">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Corrosion Removal</a></li>
+                            <li><a href="#">NDT Surface Prep</a></li>
+                            <li><a href="#">Coating Removal</a></li>
+                            <li><a href="#">Smoke Damage Removal</a></li>
+                            <li><a href="#">Smoke Damage Removal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-newsletter-div">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="nws-cont">
+                            <h3>subscribe to our
+                                newsletter</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="nws-form">
+                            <form action="">
+                                <input type="text" placeholder="Your name">
+                                <input type="email" placeholder="Your email address">
+                                <button type="submit">
+                                    Subscribe
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                        <path d="M1 1L7 7L1 13" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-div">
+                <p>Copyright © 2024 | <a href="/">Project Laser</a> | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

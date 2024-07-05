@@ -1,0 +1,366 @@
+.ap-known-learn-hdbg {
+    background-image: url(../images/learn-1.png);
+    height: 420px;
+    margin-top: 0;
+}
+
+.learnphil-content {
+    max-width: 632px;
+    margin-left: 140px;
+}
+
+.learnphil-content h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+
+
+.learnphil-content p {
+    color: #646464;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.learnphil-content p span {
+    font-weight: 500;
+}
+
+
+.learnphil-popular-bg {
+    background: #323232;
+    padding: 40px 60px;
+    width: 1018px;
+    text-align: center;
+    border-radius: 20px 0px 0px 20px;
+}
+.learn-popular-bg-width{
+    max-width: 635px;
+}
+
+.learnphil-popular h2 {
+    color: #FFF;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+.learnphil-popular p {
+    color: #D8D8D8;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.learn-phil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* .learnphil-popular img {
+    width: 100%;
+} */
+
+.learnphil-line h4 {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.learnphil-line p {
+    color: #D8D8D8;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.learnphil-line {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 46px;
+    position: relative;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.learnphil-line:last-child {
+    padding-bottom: 0px;
+}
+
+.learnphil-popular {
+    padding-bottom: 36px;
+}
+
+.learnphil-line-change {
+    text-align: end;
+    justify-content: end;
+}
+
+/* .learnphil-line::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/pl-Connector-line1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 760px;
+    height: 72px;
+    left: 9.6%;
+    bottom: 0px;
+}
+
+.learnphil-line-change::after {
+    background-image: url(../images/pl-Connector-line-2.png);
+}
+
+.learnphil-line:last-child:after {
+    background-image: unset;
+} */
+
+
+
+.our-speciality-txt h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+
+.our-speciality-txt p {
+    color: #646464;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.our-speciality-bg {
+    padding-top: 40px;
+}
+
+.osc-txt h6 {
+    color: #323232;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.osc-txt p {
+    color: #646464;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.our-spec-content-bg {
+    padding-top: 24px;
+    padding-bottom: 50px;
+}
+
+.our-spec-content {
+    max-width: 1065px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.our-spec-content-change {
+    margin: 0px 0px 30px auto;
+}
+
+
+.learnphil-line-made {
+    max-width: 81%;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    background: linear-gradient(to right, #D8D8D877 50%, transparent 50%);
+    background-size: 8px 1px;
+    position: relative;
+}
+
+.learnphil-line-made::after {
+    position: absolute;
+    content: url(../images/phil-1.png);
+    left: -20px;
+    bottom: -28.5px;
+}
+
+.learnphil-line-made::before {
+    position: absolute;
+    content: url(../images/phil-2.png);
+    right: -10px;
+    top: -20px;
+}
+
+.learnphil-line-made-change::after {
+    content: url(../images/phil-3.png);
+    left: -21px;
+    top: -20.2px;
+}
+
+.learnphil-line-made-change::before {
+    content: url(../images/phil-4.png);
+    right: -23px;
+    top: -38px;
+}
+
+
+@media (max-width:1600px){
+    .learnphil-line-made {
+        max-width: 75%;
+    }
+    .learnphil-content {
+        margin-left: 70px;
+    }
+}
+@media (max-width:1440px){
+    .learnphil-line-made {
+        max-width: 75%;
+    }
+    .learnphil-content {
+        max-width: 600px;
+        margin-left: 20px;
+    }
+}
+@media (max-width:1366px){
+    .learnphil-line p {
+        color: #D8D8D8;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+@media (max-width:1280px){
+    .learnphil-popular-bg {
+        background: #323232;
+        padding: 40px 60px;
+        width: 1018px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .learn-popular-bg-width {
+        max-width: unset;
+    }
+    .learnphil-line-made {
+        max-width: 70%;
+    }
+  
+    .learn-phil {
+        flex-direction: column;
+    }
+    .learnphil-content {
+        max-width: 100%;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .learnphil-content h2 {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .learnphil-popular-bg {
+        max-width: 100%;
+    }
+    .learnphil-line-made {
+        max-width: 85%;
+    }
+    
+}
+
+@media (max-width:1024px){
+    .learnphil-line-made {
+        max-width: 81%;
+    }
+}
+
+
+@media (max-width:820px){
+    .learnphil-line-made {
+        max-width: 76%;
+    }
+
+}
+
+@media (max-width:767px){
+    /* .ap-known-learn-hdbg {
+        height: 100vh;
+    } */
+     .learnphil-popular img{
+        width: 100%;
+     }
+
+    .learnphil-content p {
+        font-size: 16px;
+    }
+    .learnphil-line-made{
+        display: none;
+    }
+    .learnphil-line {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    padding-top: 20px;
+    gap: 0;
+    }
+    .learnphil-line-change{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .learnphil-popular h2 {
+        font-size: 24px;
+    }
+    .learnphil-popular p {
+        font-size: 16px;
+    }
+    .learnphil-popular {
+        padding-bottom: 0;
+    }
+    .learnphil-popular-bg {
+        padding: 40px 20px;
+    }
+    .our-speciality-bg {
+        padding-top: 40px;
+    }
+    .our-speciality-txt h2 {
+        font-size: 24px;
+    }
+    .our-speciality-txt p {
+        font-size: 16px;
+    }
+    .our-spec-content{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .our-spec-content-change{
+        flex-direction: column;
+    }
+    .learnphil-content {
+        margin-left: 0;
+        padding: 20px 20px 0px 20px;
+    }
+    .learn-phil {
+        gap: 0px;
+    }
+    .osc-txt h6 {
+        font-size: 24px;
+    }
+    .osc-txt p {
+        font-size: 16px;
+    }
+    .our-spec-content-bg {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    .learnphil-line-txt{
+        border: 1px dashed #D8D8D8;
+        padding: 20px 20px 50px 20px;
+        border-radius: 20px 20px 160px 160px;
+    }
+}

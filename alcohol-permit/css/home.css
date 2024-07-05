@@ -1,0 +1,1697 @@
+/* Liquor Licence Section crousel */
+.liquor-avail h1 {
+    color: #000;
+    font-size: 49px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 76px;
+    margin: 0;
+    max-width: 985px;
+    margin-bottom: 20px;
+}
+
+.liquor-avail h1::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.liquor-avail h1::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    right: -75px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.liquor-avail p {
+    color: #646464;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.liquor-crousel-price {
+    max-width: 533px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+    padding: 40px 30px;
+    position: relative;
+}
+
+.lcp-text h4 {
+    color: #000;
+    font-size: 39px;
+    font-weight: 500;
+    padding-top: 24px;
+}
+
+.lcp-text p {
+    color: #646464;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.lcp-type p {
+    color: #646464;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 28px;
+}
+
+.lcp-links {
+    margin-top: 28px;
+    border-radius: 50px;
+    border: 1px solid #FF4600;
+    padding: 11px 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.lcp-links:hover {
+    background-color: #FF4600;
+}
+
+.lcp-links:hover a {
+    color: white;
+}
+
+.lcp-links:hover a svg path {
+    fill: white;
+}
+
+.lcp-links a {
+    color: #FF4600;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.lcp-btnn {
+    border-radius: 50px;
+    background-color: #FF4600;
+    padding: 5px 30px;
+    text-align: center;
+    margin-top: 12px;
+    transition: 0.3s;
+    border: 1px solid #FF4600;
+}
+
+.lcp-btnn:hover {
+    background-color: white;
+
+}
+
+.lcp-btnn:hover button svg path {
+    fill: #FF4600;
+}
+
+.lcp-btnn:hover button {
+    color: #FF4600;
+}
+
+.lcp-btnn button {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.liquor-hot-list p {
+    color: #646464;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 70, 0, 0.70);
+    padding: 12px 10px 8px 10px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    display: flex;
+    gap: 6px;
+}
+
+
+
+.lcp-country {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.lcp-country::after {
+    position: absolute;
+    content: url(../images/country.png);
+    left: 0;
+}
+
+.lcp-ty {
+    position: relative;
+}
+
+.lcp-ty::after {
+    position: absolute;
+    content: url(../images/type.png);
+    left: 0;
+}
+
+.liquor-avail-crousel .owl-carousel .owl-item img {
+    display: unset !important;
+    width: unset !important;
+}
+
+.liquor-avail-crousel .item {
+    padding: 14px 0px 14px 4px;
+}
+
+.liquor-avail-crousel .owl-carousel {
+    z-index: 0;
+}
+
+.liquor-avail-bg {
+    margin-left: 140px;
+
+}
+
+.ltcb-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1640px;
+    padding-bottom: 40px;
+}
+
+/* .liquor-test-crousel-btn button.inactive svg path {
+    stroke: #FF460066;
+}
+
+.inactive {
+    border-color: #FF460066!important; 
+    pointer-events: none; 
+  } */
+
+.liquor-test-crousel-btn button {
+    border: 1.333px solid #FF460066;
+    background-color: unset;
+    border-radius: 50%;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.liquor-test-crousel-btn {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-right: 100px;
+}
+
+.liquor-crousel-price:hover {
+
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.14);
+}
+
+.liquor-test-crousel-btn button:hover {
+    border-color: #FF4600;
+}
+
+.liquor-test-crousel-btn button:hover svg path {
+    stroke: #FF4600;
+}
+
+.lcp-more {
+    margin-top: 60px;
+}
+
+.lcp-more a {
+    border-radius: 50px;
+    border: 1px solid #FF4600;
+    padding: 17px 0px 13px 0;
+    color: #FF4600;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 240px;
+    margin: 0 auto;
+    position: relative;
+    /* Required for pseudo-element */
+    overflow: hidden;
+    /* Hide overflow of pseudo-element */
+    transition: background 0.3s, color 0.3s;
+    /* Transition for background and color */
+}
+
+.lcp-more a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #FF4600;
+    /* Background color on hover */
+    transition: left 0.3s;
+    /* Transition for left property */
+    z-index: -1;
+}
+
+.lcp-more a:hover::before {
+    left: 0;
+    /* Move pseudo-element from left to right on hover */
+}
+
+.lcp-more a:hover {
+    color: white;
+    /* Change text color to white on hover */
+}
+
+.lcp-more a:hover svg path {
+    fill: white;
+    text-replace: 0.3s;
+}
+
+
+.liq-avail-sec {
+    padding-top: 120px;
+    padding-bottom: 160px;
+
+}
+
+/* Liquor Broker Section */
+
+.liq-brok-content h1 {
+    color: #000;
+    text-align: center;
+    font-size: 49px;
+    font-weight: 400;
+    max-width: 948px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.liq-brok-content h1::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.liq-brok-content h1::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.liq-brok-content p {
+    color: #323232;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.liq-brok-content p span {
+    font-weight: 700;
+}
+
+.liq-brok-content {
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.liquor-broker-bg {
+    background: #F4F4F4;
+    padding-top: 160px;
+    padding-bottom: 180px;
+}
+
+.liq-brok-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+
+.lbi-img img {
+    filter: grayscale(1);
+    transform: scale(0.63);
+    transition: transform 0.6s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.lbi-img img:hover {
+    filter: grayscale(0);
+    transform: scale(0.8);
+}
+
+/* Liquor Services Section Start  */
+
+.liq-buy img {
+    border-radius: 18px;
+    background: #F8F1EE;
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    transition: 0.6s;
+}
+
+.liq-buy:hover img {
+    transform: scale(1.2);
+}
+
+.liq-buy a {
+    text-decoration: none;
+}
+
+.liquor-ser-content h2 {
+    color: #000;
+    font-size: 49px;
+    font-weight: 400;
+    max-width: 586px;
+    padding-left: 74px;
+    position: relative;
+}
+
+.liquor-ser-content h2::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.liquor-ser-content h2::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.liquor-ser-content p {
+    color: #646464;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0;
+}
+
+.liq-buy h5 {
+    color: #000;
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.liq-buy p {
+    font-size: 16px;
+    /* text-transform: uppercase; */
+}
+
+.liq-buy {
+    max-width: max-content;
+    border-radius: 24px;
+    border: 4px solid #FFF;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.liquor-services {
+    display: flex;
+    /* gap: 136px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liquor-ser-content {
+    max-width: 832px;
+}
+
+.liq-bse {
+    display: flex;
+    gap: 36px;
+    padding-top: 72px;
+}
+
+.liquor-services-bg {
+    padding-top: 160px;
+    padding-bottom: 180px;
+}
+
+.liquor-ser-img img {
+    border-radius: 140px 30px 30px 30px;
+    box-shadow: 30px 30px 0px 0px #FFDACC;
+    width: 100%;
+}
+
+/* Liquor FAQ'S Start */
+
+.lf-heading h2 {
+    color: #000;
+    text-align: center;
+    font-size: 49px;
+    font-weight: 400;
+    max-width: 582px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.lf-heading h2::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.lf-heading h2::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.liquor-faq-accordion {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.liquor-faq-accordion .accordion-item .accordion-button {
+    color: #323232;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: unset;
+    padding: 40px 10px;
+    /* border-bottom: 1px solid #323232; */
+}
+
+.liquor-faq-accordion .accordion-item .accordion-body {
+    color: #646464;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    padding: 20px 30px 40px 30px;
+}
+
+.liquor-faq-accordion .accordion-item {
+    /* border-color: #323232; */
+    background-color: unset;
+    border-bottom: 1px solid #323232;
+}
+
+.liquor-faq-accordion .accordion-item:last-child {
+    border-bottom: 1px solid #323232;
+}
+
+.liquor-faq-accordion .accordion-item .accordion-button:focus {
+    box-shadow: none;
+}
+
+.liquor-faq-accordion .accordion-item .accordion-button::after {
+    background-image: url(../images/plus.svg);
+    width: 32px;
+    height: 32px;
+    background-size: 32px;
+}
+
+.liquor-faq-accordion .accordion-item .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/minus.svg);
+}
+
+.liquor-faq-bg {
+    background: #F4F4F4;
+    padding-top: 160px;
+    padding-bottom: 180px;
+}
+
+.nrft-btn {
+    height: 760px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.retainers-page-load-less button {
+    border-radius: 50px;
+    border: 1px solid #FF4600;
+    padding: 17px 0px 13px 0;
+    color: #FF4600;
+    font-size: 20px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 240px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s, color 0.3s;
+    z-index: 0;
+
+}
+
+.retainers-page-load-less button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #FF4600;
+    /* Background color on hover */
+    transition: left 0.3s;
+    /* Transition for left property */
+    z-index: -1;
+}
+
+.retainers-page-load-less button:hover::before {
+    left: 0;
+    /* Move pseudo-element from left to right on hover */
+}
+
+.retainers-page-load-less button:hover {
+    color: white;
+    /* Change text color to white on hover */
+}
+
+.retainers-page-load-less button:hover svg path {
+    fill: white;
+    /* Change text color to white on hover */
+}
+
+/* Liquor TAB Start */
+
+.liquor-tab-img img {
+    border-radius: 30px 140px 30px 30px;
+    box-shadow: -30px 30px 0px 0px #6A483C;
+    width: 100%;
+}
+
+.validator-work-tabs-content {
+    width: 100%;
+    display: none;
+}
+
+.lti-bg {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.liquor-tab-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 160px;
+    padding-bottom: 180px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(../images/tab-1.png) lightgray 50% / cover no-repeat;
+}
+
+.liquor-tab-text h2 {
+    color: #FFF;
+    font-size: 49px;
+    font-weight: 400;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.liquor-tab-text h2::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #FFF;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.liquor-tab-text h2::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #FFF;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.liquor-tab-text p {
+    color: #F4F4F4;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.liquor-tab-text p span {
+    font-weight: 600;
+}
+
+.validator-work-ninja-tab ul {
+    list-style: none;
+    display: flex;
+    background-color: #78554D;
+    padding: 0;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.validator-work-ninja-tab ul li {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    padding: 17px 30px;
+    width: 386px;
+}
+
+.tab-buy {
+    position: relative;
+}
+
+.tab-buy::after {
+    position: absolute;
+    content: url(../images/tab-buy.svg);
+    left: 60px;
+}
+
+.tab-sell {
+    position: relative;
+}
+
+.tab-sell::after {
+    position: absolute;
+    content: url(../images/tab-sell.svg);
+    left: 60px;
+}
+
+.validator-work-ninja-tab ul li.active {
+    background: #323232;
+}
+
+.liquor-tab-text {
+    padding-bottom: 70px;
+}
+
+/* form */
+.vwtc-typer h4 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.vwtc-typer .vwtc-radio-option label {
+    color: #D8D8D8;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    cursor: pointer;
+}
+
+.vwtc-typer .vwtc-radio-option {
+    border-radius: 52px;
+    border: 1px solid #D8D8D8;
+    padding: 12px 24px 8px 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.vwtc-ro {
+    display: flex;
+    gap: 16px;
+}
+
+.vwtc-tab-1 form {
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(20px);
+    padding: 60px;
+}
+
+.vwtc-typer {
+    padding-bottom: 50px;
+}
+
+.vwtcro {
+    width: unset !important;
+}
+
+.vwtc-sele input::placeholder {
+    color: #D8D8D8;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.vwtc-sele select {
+    border-radius: 52px;
+    border: 1px solid #D8D8D8;
+    padding: 9px 24px 5px 24px;
+    width: 100%;
+    background-color: unset;
+    outline: none;
+    color: #D8D8D8;
+    font-size: 20px;
+    font-weight: 400;
+    appearance: none;
+    background-image: url(../images/form-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 85% center;
+}
+
+.vwtc-sele input {
+    outline: none;
+    color: #D8D8D8;
+    border-radius: 52px;
+    border: 1px solid #D8D8D8;
+    padding: 12px 24px 8px 24px;
+    width: 100%;
+    background-color: unset;
+}
+
+.vwtc-sele select option {
+    color: #D8D8D8;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.vwtc-typerfle {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.vwtc-sele {
+    width: 100%;
+}
+
+.validator-work-tabs-content form button {
+    color: #FF4600;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 52px;
+    border: 1px solid #FF4600;
+    background-color: unset;
+    width: 100%;
+    padding: 16px 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+    transition: 0.3s;
+
+}
+
+.validator-work-tabs-content form button:hover {
+    background-color: #FF4600;
+    color: white;
+}
+
+.validator-work-tabs-content form button:hover svg path {
+    stroke: white;
+}
+
+/* Hide the default radio input */
+.vwtc-radio-option input[type="radio"] {
+    display: none;
+}
+
+
+/* Style the custom radio button */
+.vwtc-radio-option input[type="radio"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: 1px solid #D8D8D8;
+    /* Default border color */
+    background-color: transparent;
+    /* Default background color */
+}
+
+/* Change background color of radio button when radio input is checked */
+.vwtc-radio-option input[type="radio"]:checked+label::before {
+    background-color: #FF4600;
+    /* Change background color when checked */
+    border-color: #FF460066;
+}
+
+/* ======licence popup===== */
+
+.liquor-ser-popup h2 {
+    color: #000;
+    text-align: center;
+    font-size: 49px;
+    font-weight: 400;
+    max-width: 631px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.liquor-ser-popup h2:after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.liquor-ser-popup h2::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.lspop-ipt label {
+    color: #323232;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.lspop-ipt select,
+.lspop-ipt input {
+    border-radius: 8px;
+    border: 1px solid #969696;
+    color: #646464;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 17px 14px;
+    background-color: unset;
+    outline: none;
+    appearance: none;
+}
+
+.lspop-ipt select {
+    background-image: url(../images/popup-arroe.png);
+    background-repeat: no-repeat;
+    background-position: 99% center;
+}
+
+.lspop-ipt {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-bottom: 30px;
+}
+
+.liquor-ser-popup form button {
+    border-radius: 8px;
+    background-color: #FF4600;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #FF4600;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.liquor-ser-popup form button:hover {
+    color: #FF4600;
+    background-color: white;
+}
+
+.liquor-ser-popup .popup-close {
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    cursor: pointer;
+}
+
+/* .liquor-ser-popup-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.liquor-ser-popup{
+    display: none;
+    border-radius: 32px;
+    background: white;
+    padding: 60px 80px;
+    max-width: 832px;
+    margin: 0 auto;
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+.liquor-ser-popup-bg {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.liquor-ser-popup {
+    display: none;
+    border-radius: 32px;
+    background: white;
+    padding: 60px 80px;
+    max-width: 832px;
+    /* margin: 0 auto; */
+    /* Position it relative to the parent */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.ltcb-display {
+    display: none;
+}
+
+
+
+
+/* =========popup 2========= */
+
+.lsp-2 {
+    max-width: 1126px;
+    padding: 194px 227px;
+}
+
+.lsp-2 h2 {
+    font-size: 31px;
+    margin-bottom: 12px;
+}
+
+.lsp-2 p {
+    color: #646464;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lsp-2 form button {
+    margin-top: 30px;
+}
+
+/* =========popup 3========= */
+.lsp-3 h2 {
+    font-size: 31px;
+    margin-bottom: 12px;
+    max-width: 359px;
+}
+
+.lsp-3 p {
+    color: #646464;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lsp-otp-input input {
+    border-radius: 8px;
+    border: 1px solid #969696;
+    width: 56px;
+    height: 56px;
+    outline: none;
+    text-align: center;
+
+}
+
+.lsp-otp-bg p {
+    color: #969696;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.lsp-otp-input {
+    text-align: center;
+}
+
+.lsp-oi {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lsp-otp-input #timer {
+    color: #FF4600;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.lsp-3 form .resend-otp {
+    background-color: white;
+    color: #FF4600;
+    border: none;
+}
+
+.lsp-3 form .resend-otp:hover {
+    color: white;
+    background-color: #FF4600;
+}
+
+.lsp-3 {
+    max-width: 848px;
+    padding: 150px 185px;
+}
+
+
+/* =======popup 4========= */
+
+.lsp-3 form .call-back {
+    background-color: white;
+    color: #FF4600;
+    margin-top: 16px;
+}
+
+.lsp-4 h2 {
+    max-width: 489px;
+}
+
+.lsp-3 form .call-back:hover {
+    background-color: #FF4600;
+    color: white;
+}
+
+.lsp-3 form .call-back:hover svg path {
+    fill: white;
+}
+
+.lsp-3 form .calbak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.liquor-ser-popup form button:hover svg path {
+    fill: #FF4600;
+}
+
+/* =======popup 5 ========= */
+
+.lsp-5 h2 {
+    max-width: 323px;
+}
+
+.lsp-5 p {
+    color: #969696;
+    margin-bottom: 40px;
+}
+
+.lsp-5 .lsp-otp-bg {
+    color: #646464;
+}
+
+.lsp-5 {
+    max-width: 756px;
+    padding: 142px 105px;
+}
+
+/* =======popup 6 ========= */
+
+.lsp-6 h2 {
+    max-width: 235px;
+    text-transform: uppercase;
+}
+
+.lsp-6 {
+    max-width: 600px;
+}
+
+
+
+
+
+/* .liquor-avail-crousel .owl-prev{
+    border: 1.333px solid #FF4600!important;
+    background-color: unset!important;
+    border-radius: 50%!important;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+}
+.liquor-avail-crousel .owl-next{
+    border: 1.333px solid #FF4600!important;
+    background-color: unset!important;
+    border-radius: 50%!important;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.liquor-avail-bg .liquor-avail-crousel .owl-nav{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+} */
+
+
+@media (max-width:1280px) {
+    .liquor-services {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .lti-bg {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .liquor-ser-content h2 {
+        margin: 0 auto;
+    }
+
+    .liquor-ser-content p {
+        text-align: center;
+    }
+
+    .alcohol-footer {
+        flex-direction: column;
+    }
+
+    .alc-foo-list ul {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width:1200px) {
+    .liquor-licence-btn {
+        flex-wrap: wrap;
+    }
+
+    .alched-regist-num-mob {
+        display: none;
+    }
+
+    .alc-search-sticky {
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width:1024px) {
+    .liq-bse {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .validator-work-ninja-tab ul li {
+        width: 100%;
+    }
+
+    .tab-buy::after {
+        left: 5px;
+        top: 13px;
+    }
+
+    .tab-sell::after {
+        left: 5px;
+        top: 13px;
+    }
+}
+
+@media (max-width:767px) {
+    .liquor-licence h1 {
+        font-size: 28px;
+    }
+
+    .liquor-licence-state {
+        flex-direction: column;
+        border-radius: 20px;
+        /* max-width: max-content; */
+        margin: 0 auto;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .lls-search {
+        width: max-content;
+        width: max-content;
+        margin: auto;
+    }
+
+    .lls-state-line::before {
+        content: unset;
+    }
+
+    .lls-state-line::after {
+        content: unset;
+    }
+
+    .lcp-img img {
+        height: 60px;
+    }
+
+    .liquor-licence-btn a {
+        font-size: 10px;
+        gap: 8px;
+        padding: 12px 12px;
+    }
+
+    .liquor-crousel-price {
+        max-width: 313px;
+    }
+
+    .lcp-text p {
+        font-size: 16px;
+    }
+
+    .lcp-text h4 {
+        font-size: 24px;
+    }
+
+    .liquor-hot-list p {
+        /* right: 8px; */
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    .lcp-more {
+        margin-top: 20px;
+    }
+
+    .lcp-more a {
+        padding: 10px 0px;
+    }
+
+    .retainers-page-load-less button {
+        padding: 10px 0px;
+    }
+
+    .nrft-btn {
+        height: 260px;
+    }
+
+    .validator-work-tabs-content form button {
+        padding: 10px 30px;
+    }
+
+    .liquor-licence-btn {
+        gap: 12px;
+    }
+
+    .liquor-avail-bg {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .validator-work-ninja-tab ul li {
+        font-size: 12px;
+    }
+   
+    .vwtc-tab-1 form {
+        padding: 30px 20px;
+    }
+
+    .vwtc-typer {
+        padding-bottom: 30px;
+    }
+
+    .vwtc-sele select {
+        font-size: 14px;
+        padding: 9px 12px;
+    }
+
+    .vwtc-ro {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .validator-work-tabs-content form button {
+        font-size: 14px;
+    margin: 0;
+    }
+
+    .vwtc-typer h4 {
+        font-size: 16px;
+    }
+
+    .vwtc-typer .vwtc-radio-option label {
+        font-size: 14px;
+    }
+
+    .vwtc-typer .vwtc-radio-option {
+        padding: 10px 12px 8px 12px;
+        flex: 0 0 48%;
+    }
+
+    .vwtc-radio-option input[type="radio"]+label::before {
+        margin-right: 8px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .vwtc-ro .vwtcro {
+        flex: unset;
+    }
+
+    .vwtc-sele input::placeholder {
+        font-size: 14px;
+    }
+
+    .vwtc-sele input {
+
+        padding: 7px 12px;
+    }
+
+    
+
+    .alcohol-foo-perm {
+        gap: 6px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .liquor-avail p {
+        font-size: 16px;
+    }
+
+    .alc-search-sticky {
+        flex-wrap: wrap;
+    }
+
+    .ltcb-bg {
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    .liquor-avail h1 {
+        font-size: 24px;
+        padding-left: 0;
+    }
+
+    /* .x-mobile-header-hide-menu-list ul{
+        padding-left: 16px;
+    } */
+
+    .split-accordion-toggle svg {
+        transform: rotate(90deg);
+    }
+
+    .liquor-avail h1::before,
+    .liquor-avail h1::after,
+    .liq-brok-content h1::before,
+    .liq-brok-content h1::after,
+    .liquor-ser-content h2::before,
+    .liquor-ser-content h2::after,
+    .lf-heading h2::before,
+    .lf-heading h2::after,
+    .liquor-tab-text h2::before,
+    .liquor-tab-text h2::after,
+    .liquor-ser-popup h2::before,
+    .liquor-ser-popup h2::after {
+        content: unset;
+    }
+
+    .liq-brok-content h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: start;
+    }
+
+    .liq-brok-content p {
+        font-size: 16px;
+        text-align: start;  
+    }
+
+    .liquor-ser-content h2 {
+        font-size: 24px;
+        padding-left: 0;
+        text-align: start;
+        padding-bottom: 20px;
+    }
+
+    .liquor-ser-content p {
+        font-size: 16px;
+        text-align: start;
+    }
+    .liquor-ser-img{
+        display: none;
+    }
+
+    .lf-heading h2 {
+        font-size: 24px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    text-align: start;
+    }
+
+    .liquor-tab-text h2 {
+        font-size: 24px;
+        text-align: start;
+    }
+
+    .liquor-tab-text p {
+        font-size: 16px;
+        text-align: start;
+    }
+    .validator-work-ninja-tab ul {
+        margin-bottom: 20px;
+    }
+
+    .x-mobile-header-hide-menu-bg {
+        z-index: 1;
+    }
+
+    .liquor-faq-accordion .accordion-item .accordion-button {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+
+    .liquor-faq-accordion .accordion-item .accordion-body {
+        font-size: 14px;
+        padding: 12px 22px;
+    }
+
+    .liq-avail-sec,
+    .liquor-broker-bg,
+    .liquor-services-bg,
+    .liquor-faq-bg,
+    .liquor-tab-bg {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .liq-brok-img {
+        padding-top: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lbi-img {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 50%;
+    }
+
+    .lbi-img img {
+        filter: grayscale(0);
+    }
+
+    .lbi-img img:hover {
+        filter: unset;
+        transform: unset;
+    }
+
+    .liq-bse {
+        padding-top: 30px;
+        gap: 12px;
+    }
+
+    .liquor-tab-text {
+        padding-bottom: 20px;
+    }
+
+    
+
+    .alcohol-permit-hdbg {
+        margin-top: 0px;
+        height: 580px;
+    }
+
+    .liquor-licence-bg {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .lls-state-dropdown select {
+        width: 100%;
+    }
+
+    .liquor-ser-popup {
+        padding: 20px 30px;
+    }
+
+    .liquor-ser-popup h2 {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+
+    .alcass-logo img {
+        height: 40px;
+
+    }
+
+    .alcass-search input {
+        padding: 9px 30px;
+    }
+
+    .popup-close svg {
+        height: 24px;
+    }
+
+    .ltcb-display {
+        display: block;
+        text-align: center;
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .ltcb-display .prev-btn {
+        margin-right: 14px;
+    }
+
+    .ltcb-display-mob {
+        display: none;
+    }
+
+    .liq-buy h5 {
+        font-size: 22px;
+        padding-top: 20px;
+    }
+
+    .liq-buy img {
+        padding: 25px;
+    }
+
+    .liq-buy {
+        padding: 10px;
+        /* flex: 0 0 33%; */
+    }
+
+    .lls-state {
+        width: 100%;
+    }
+
+    .liquor-broker-bg {
+        padding-bottom: 0;
+    }
+
+    .liquor-licence-btn a {
+        padding: 11px 24px;
+    }
+    .lti-bg {
+        gap: 60px;
+    }
+    .liquor-faq-accordion .accordion-item .accordion-button::after {
+        width: 18px;
+        height: 18px;
+        background-size: 18px;
+    }
+}
+
+@media (max-width:380px) {
+    .liquor-licence-state {
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .liquor-licence-btn a {
+        padding: 11px 24px;
+    }
+}

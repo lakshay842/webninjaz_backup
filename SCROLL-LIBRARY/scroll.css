@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  #section1 { background-color: lightcoral; }
+  #section2 { background-color: lightblue; }
+  #section3 { background-color: lightgreen; }
+  #section4 { background-color: lightgoldenrodyellow; }

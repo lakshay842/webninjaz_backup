@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup-popup</title>
+    <!-- fonts -->
+    <link rel="stylesheet" href="./fonts/futura-now/stylesheet.css">
+</head>
+<style>
+    #signup-popup {
+        background-color: #ffffff;
+        width: 560px;
+        font-family: 'Futura Now Headline';
+        color: #646464;
+        padding: 10px 30px;
+        border-radius: 24px;
+        position: relative;
+        top: 75px;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .otp-heading {
+        display: flex;
+        gap: 20px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    .otp-heading > p {
+        margin: 0;
+    }
+    .otp-form-elements {
+        color: #323232;
+        display: flex;
+        flex-direction: column;
+        border-top: 1.5px solid #D8D8D8;
+        border-bottom: 1.5px solid #D8D8D8;
+        padding: 0px 0px 30px 0px;
+        margin: 30px 0;
+    }
+   
+    .aboutyou-form-elements{
+        color: #323232;
+       display: flex;
+       flex-direction: column;
+       margin: 20px 0px 0px 0px;
+    }
+    .aboutyou-form-elements select{
+        padding: 16.5px 14px 16.5px 14px;
+        border-radius: 8px;
+        border: 1px solid #969696;
+    }
+    .otp-input {
+        width: 56px;
+        height: 56px;
+        border-radius: 8px;
+        border: 1px solid #969696;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .signup-button {
+        background-color: #FF4600;
+        color: #FFFFFF;
+        font-size: 20px;
+        border-radius: 8px;
+        border: 1px solid #FF4600;
+        padding: 16.5px 60px 16.5px 60px;
+        ;
+    }
+
+    .otp-fields {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .otp-sub-sec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    .otp-sub-sec div a {
+        color: #FF4600;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .otp-numbers {
+        display: flex;
+        gap: 20px;
+        margin: 10px 0;
+    }
+
+    .label-text {
+        font-size: 16px;
+        font-weight: 500;
+        width: 520px;
+        color:  #323232;
+    }
+
+    .time-remaining {
+        color: #FF4600;
+    }
+
+    .radio-options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #D8D8D8;
+    }
+    .radio-options-bn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .radio-option-type {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+     .radio-btn{
+        padding: 20px;
+     }
+    .otp-types {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .aboutyou-sugg {
+        font-size: 20px;
+        color: #646464;
+        margin: 5px 0;
+        font-weight: 400;
+        width:450px;    
+    }
+    select{
+        color: #646464;
+    }
+    .otp-form-elements > p{
+        color: #646464;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .otp-form-elements > p > a{
+        color: #323232;
+    }
+
+    /* p {
+        margin: 0;
+    } */
+    .aboutyou-form-elements > label{
+        font-size: 25px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    .aboutyou-form-elements > input{
+        padding: 16.5px 14px 16.5px 14px;
+        border-radius: 8px;
+        border: 1px solid #969696;
+    }
+    .more-option-fields {
+        border: 1px solid #D8D8D8;
+        border-radius: 24px;
+        margin: 20px 0;
+       
+    }
+    #close-popup {
+        position: absolute;
+        top: -7px;
+        right: -5px;
+        font-size: 16px;
+    }
+
+    .signup-button {
+        width: 100%;
+        background-color: #FF4600;
+        color: #FFFFFF;
+        font-size: 20px;
+        padding: 16.5px 14px 16.5px 14px;
+        border-radius: 8px;
+        border: 1px solid #FF4600;
+    }
+</style>
+
+<body style="background-color: black;">
+    <div id="signup-popup">
+        <div id="close-popup">
+            <img src="./images/cross.svg" alt="">
+        </div>
+        <div class="otp-heading">
+            <img src="./images/tabler_chevron-up.svg" alt="">
+            <p class="otp-popup-heading">Finish signing up</p>
+        </div>
+        <form id="aboutyou-form">
+            <div class="otp-form-elements">
+                    <div class="aboutyou-form-elements">
+                        <label for="f_name">First Name<sup>*</sup> </label>
+                        <input type="text" id="f_name" name="f_name" placeholder="Enter Your First Name">
+                    </div>
+                    <div class="aboutyou-form-elements">
+                        <label for="l_name">Last Name<sup>*</sup></label>
+                       <input type="text" id="l_name" name="l_name" placeholder="Enter Your Last Name">
+                    </div>
+                    <div class="aboutyou-form-elements">
+                        <label for="contact_info">Contact info<sup>*</sup></label>
+                       <input type="text" id="contact_info" name="contact_info" placeholder="Enter Email Address">
+                    </div>  
+                    <p>By selecting Agree and Continue, I agree to AlcoholPermit.com's <a href="">Terms of Service, Payments Terms of Service</a>, and <a href="">Nondiscrimination Policy,</a> and acknowledge the <a href="">Privacy Policy</a> .</p>     
+            </div>
+            <button class="signup-button">Agree and Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

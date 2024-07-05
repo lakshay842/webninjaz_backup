@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutYou-PopUp</title>
+    <!-- fonts -->
+    <link rel="stylesheet" href="./fonts/futura-now/stylesheet.css">
+</head>
+<style>
+    #aboutyou-popup {
+        background-color: #ffffff;
+        width: 560px;
+        font-family: 'Futura Now Headline';
+        color: #646464;
+        padding: 10px 30px;
+        border-radius: 24px;
+        position: relative;
+        top: 75px;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .otp-heading {
+        display: flex;
+        gap: 20px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .otp-form-elements {
+        color: #323232;
+        display: flex;
+        flex-direction: column;
+        border-top: 1.5px solid #D8D8D8;
+        border-bottom: 1.5px solid #D8D8D8;
+        padding: 30px 0 30px 0;
+        margin: 30px 0;
+    }
+
+    .otp-form-elements>p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .aboutyou-form-elements {
+        color: #323232;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .aboutyou-form-elements select {
+        padding: 16.5px 14px 16.5px 14px;
+        border-radius: 8px;
+        border: 1px solid #969696;
+    }
+
+    .otp-input {
+        width: 56px;
+        height: 56px;
+        border-radius: 8px;
+        border: 1px solid #969696;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .otp-sub-button {
+        background-color: #FF4600;
+        color: #FFFFFF;
+        font-size: 20px;
+        border-radius: 8px;
+        border: 1px solid #FF4600;
+        padding: 16.5px 60px 16.5px 60px;
+        ;
+    }
+
+    .otp-fields {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .otp-sub-sec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    .otp-sub-sec div a {
+        color: #FF4600;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .otp-numbers {
+        display: flex;
+        gap: 20px;
+        margin: 10px 0;
+    }
+
+    .label-text {
+        font-size: 16px;
+        font-weight: 500;
+        width: 520px;
+        color: #323232;
+    }
+
+    .time-remaining {
+        color: #FF4600;
+    }
+
+    .radio-options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #D8D8D8;
+    }
+
+    .radio-options-bn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .radio-option-type {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .radio-btn {
+        padding: 20px;
+    }
+
+    .otp-types {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .aboutyou-sugg {
+        font-size: 20px;
+        color: #646464;
+        margin: 5px 0;
+        font-weight: 400;
+        width: 450px;
+    }
+
+    select {
+        color: #646464;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .aboutyou-form-elements>label {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .more-option-fields {
+        border: 1px solid #D8D8D8;
+        border-radius: 24px;
+        margin: 20px 0;
+
+    }
+
+    #close-popup {
+        position: absolute;
+        top: -7px;
+        right: -5px;
+        font-size: 16px;
+    }
+
+    .aboutyou-button {
+        width: 100%;
+        background-color: #FF4600;
+        color: #FFFFFF;
+        font-size: 20px;
+        padding: 16.5px 14px 16.5px 14px;
+        border-radius: 8px;
+        border: 1px solid #FF4600;
+    }
+
+
+
+    .dropdown {
+        position: relative;
+        cursor: pointer;
+        border-radius: 8px;
+        color: #646464;
+    }
+    .dropdown-selected {
+        padding: 10px;
+        border: 1px solid #969696;
+        background: #fff;
+        border-radius: 8px;
+        padding: 16.5px 14px 16.5px 14px;
+        color: #646464;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        /* left: 0; */
+        right: -1px;
+        top: 55px;
+        border: 1px solid #ccc;
+        background: #fff;
+        z-index: 1000;
+        width: 284px;
+        border-radius: 12px;
+        padding: 10px 15px;
+        box-shadow: 0px 4px 24px 0px #00000026;
+    }
+
+   .dropdown-item {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .dropdown-item:hover {
+        background-color: #FBF1ED;
+        color: #FF4600;
+    }
+
+    .dropdown-list::after {
+        position: absolute;
+        content: '';
+        width: 28px;
+        height: 28px;
+        transform: rotate(-45deg);
+        border-radius: 5px;
+        background: #ffff;
+        top: -11px;
+        right: 15px;
+        z-index: -1;
+        box-shadow: 0px 0 0px 0px rgba(255, 0, 0, 0.5), 0px 4px -1px 0px rgb(139 146 139 / 50%), 0 4px 4px 0px rgb(98 98 118 / 50%), 0 0px 0px 0px rgba(255, 255, 0, 0);
+    }
+
+
+
+    .dropdown-country {
+        position: relative;
+        cursor: pointer;
+        border-radius: 8px;
+        color: #646464;
+    }
+    .dropdown-selected-country {
+        padding: 10px;
+        border: 1px solid #969696;
+        background: #fff;
+        border-radius: 8px;
+        padding: 16.5px 14px 16.5px 14px;
+        color: #646464;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown-list-country {
+        display: none;
+        position: absolute;
+        top: 100%;
+        /* left: 0; */
+        right: -1px;
+        top: 55px;
+        border: 1px solid #ccc;
+        background: #fff;
+        z-index: 1000;
+        width: 284px;
+        border-radius: 12px;
+        padding: 10px 15px;
+        box-shadow: 0px 4px 24px 0px #00000026;
+    }
+
+   .dropdown-item-country {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .dropdown-item-country:hover {
+        background-color: #FBF1ED;
+        color: #FF4600;
+    }
+
+    .dropdown-list-country::after {
+        position: absolute;
+        content: '';
+        width: 28px;
+        height: 28px;
+        transform: rotate(-45deg);
+        border-radius: 5px;
+        background: #ffff;
+        top: -11px;
+        right: 15px;
+        z-index: -1;
+        box-shadow: 0px 0 0px 0px rgba(255, 0, 0, 0.5), 0px 4px -1px 0px rgb(139 146 139 / 50%), 0 4px 4px 0px rgb(98 98 118 / 50%), 0 0px 0px 0px rgba(255, 255, 0, 0);
+    }
+
+
+
+    .dropdown-type {
+        position: relative;
+        cursor: pointer;
+        border-radius: 8px;
+        color: #646464;
+    }
+    .dropdown-selected-type {
+        padding: 10px;
+        border: 1px solid #969696;
+        background: #fff;
+        border-radius: 8px;
+        padding: 16.5px 14px 16.5px 14px;
+        color: #646464;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown-list-type {
+        display: none;
+        position: absolute;
+        top: 100%;
+        /* left: 0; */
+        right: -1px;
+        top: 55px;
+        border: 1px solid #ccc;
+        background: #fff;
+        z-index: 1000;
+        width: 284px;
+        border-radius: 12px;
+        padding: 10px 15px;
+        box-shadow: 0px 4px 24px 0px #00000026;
+    }
+
+   .dropdown-item-type {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .dropdown-item-type:hover {
+        background-color: #FBF1ED;
+        color: #FF4600;
+    }
+
+    .dropdown-list-type::after {
+        position: absolute;
+        content: '';
+        width: 28px;
+        height: 28px;
+        transform: rotate(-45deg);
+        border-radius: 5px;
+        background: #ffff;
+        top: -11px;
+        right: 15px;
+        z-index: -1;
+        box-shadow: 0px 0 0px 0px rgba(255, 0, 0, 0.5), 0px 4px -1px 0px rgb(139 146 139 / 50%), 0 4px 4px 0px rgb(98 98 118 / 50%), 0 0px 0px 0px rgba(255, 255, 0, 0);
+    }
+</style>
+
+<body style="background-color: black;">
+    <div id="aboutyou-popup">
+        <div id="close-popup">
+            <img src="./images/cross.svg" alt="">
+        </div>
+        <div class="otp-heading">
+            <img src="./images/tabler_chevron-up.svg" alt="">
+            <p class="otp-popup-heading">Let's Learn More About You</p>
+        </div>
+        <form id="aboutyou-form">
+            <div class="otp-form-elements">
+                <!-- <p class="label-text">Select an alternative method to receive a verification code at +91 9627898516</p> -->
+                <div class="aboutyou-sugg">where are you interested in buying or selling liquor licenses?</div>
+                <div class="aboutyou-form-elements">
+                    <label for="country">State<sup>*</sup></label>
+                    <div class="dropdown" id="dropdown">
+                        <div class="dropdown-selected" id="dropdown-selected">
+                            <div>Select State</div>
+                            <div><svg id="down-arrow-icon" width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.7422 1.60742L6.74219 6.60742L1.74219 1.60742" stroke="#646464"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dropdown-list" id="dropdown-list">
+                            <span class="arrow"></span>
+                            <div class="dropdown-item" data-value="+1">Uttar Pradesh</div>
+                            <div class="dropdown-item" data-value="">Punjab</div>
+                            <div class="dropdown-item" data-value="">Madhya Pradesh</div>
+                            <div class="dropdown-item" data-value="">Kerala</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutyou-form-elements">
+                    <label for="country">Country<sup>*</sup></label>
+                    <div class="dropdown-country" id="dropdown-country">
+                        <div class="dropdown-selected-country" id="dropdown-selected-country">
+                            <div>Select Country</div>
+                            <div><svg id="down-arrow-icon-country" width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.7422 1.60742L6.74219 6.60742L1.74219 1.60742" stroke="#646464"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dropdown-list-country" id="dropdown-list-country">
+                            <span class="arrow"></span>
+                            <div class="dropdown-item-country" data-value="+1">USA</div>
+                            <div class="dropdown-item-country" data-value="">India</div>
+                            <div class="dropdown-item-country" data-value="">Australia</div>
+                            <div class="dropdown-item-country" data-value="">Italy</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutyou-form-elements">
+                    <label for="type">Type<sup>*</sup></label>
+                    <div class="dropdown-type" id="dropdown-type">
+                        <div class="dropdown-selected-type" id="dropdown-selected-type">
+                            <div>Select Type</div>
+                            <div><svg id="down-arrow-icon-type" width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.7422 1.60742L6.74219 6.60742L1.74219 1.60742" stroke="#646464"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dropdown-list-type" id="dropdown-list-type">
+                            <span class="arrow"></span>
+                            <div class="dropdown-item-type" data-value="+1">USA</div>
+                            <div class="dropdown-item-type" data-value="">India</div>
+                            <div class="dropdown-item-type" data-value="">Australia</div>
+                            <div class="dropdown-item-type" data-value="">Italy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="aboutyou-button">Submit</button>
+        </form>
+    </div>
+</body>
+<script>
+     document.addEventListener('DOMContentLoaded', function () {
+            const dropdown = document.getElementById('dropdown');
+            const selected = document.getElementById('dropdown-selected');
+            const dropdownList = document.getElementById('dropdown-list');
+            const items = document.querySelectorAll('.dropdown-item');
+            const arrowIcon = document.getElementById('down-arrow-icon');
+
+            // Toggle dropdown list visibility
+            selected.addEventListener('click', function () {
+                if (dropdownList.style.display === 'block') {
+                    dropdownList.style.display = 'none';
+                    arrowIcon.style.transform = 'rotate(0deg)';
+                } else {
+                    dropdownList.style.display = 'block';
+                    arrowIcon.style.transform = 'rotate(180deg)';
+                }
+
+
+            });
+
+            // Handle item selection
+            items.forEach(item => {
+                item.addEventListener('click', function () {
+                    selected.textContent = this.textContent;
+                    selected.dataset.value = this.dataset.value;
+                    dropdownList.style.display = 'none';
+                });
+            });
+
+            // Close dropdown if clicked outside
+            document.addEventListener('click', function (event) {
+                if (!dropdown.contains(event.target)) {
+                    dropdownList.style.display = 'none';
+                }
+            });
+
+
+            // --------------  dropdown for country -----------------------
+            const dropdownCountry = document.getElementById('dropdown-country');
+            const selectedCountry = document.getElementById('dropdown-selected-country');
+            const dropdownListCountry = document.getElementById('dropdown-list-country');
+            const itemsCountry = document.querySelectorAll('.dropdown-item-country');
+            const arrowIconCountry = document.getElementById('down-arrow-icon-country');
+
+            // Toggle dropdown list visibility
+            selectedCountry.addEventListener('click', function () {
+                if (dropdownListCountry.style.display === 'block') {
+                    dropdownListCountry.style.display = 'none';
+                    arrowIconCountry.style.transform = 'rotate(0deg)';
+                } else {
+                    dropdownListCountry.style.display = 'block';
+                    arrowIconCountry.style.transform = 'rotate(180deg)';
+                }
+
+
+            });
+
+            // Handle item selection
+            itemsCountry.forEach(itemCountry => {
+                itemCountry.addEventListener('click', function () {
+                    selectedCountry.textContent = this.textContent;
+                    selectedCountry.dataset.value = this.dataset.value;
+                    dropdownListCountry.style.display = 'none';
+                });
+            });
+
+            // Close dropdown if clicked outside
+            document.addEventListener('click', function (event) {
+                if (!dropdownCountry .contains(event.target)) {
+                    dropdownListCountry.style.display = 'none';
+                }
+            });
+    
+
+         // --------------  dropdown for Type -----------------------
+            const dropdownType = document.getElementById('dropdown-type');
+            const selectedType = document.getElementById('dropdown-selected-country');
+            const dropdownListType = document.getElementById('dropdown-list-type');
+            const itemsType = document.querySelectorAll('.dropdown-item-type');
+            const arrowIconType = document.getElementById('down-arrow-icon-type');
+
+            // Toggle dropdown list visibility
+            selectedType.addEventListener('click', function () {
+                if (dropdownListType.style.display === 'block') {
+                    dropdownListType.style.display = 'none';
+                    arrowIconType.style.transform = 'rotate(0deg)';
+                } else {
+                    dropdownListCountry.style.display = 'block';
+                    arrowIconType.style.transform = 'rotate(180deg)';
+                }
+
+
+            });
+
+            // Handle item selection
+            itemsType.forEach(itemType => {
+                itemType.addEventListener('click', function () {
+                    selectedType.textContent = this.textContent;
+                    selectedType.dataset.value = this.dataset.value;
+                    dropdownListType.style.display = 'none';
+                });
+            });
+
+            // Close dropdown if clicked outside
+            document.addEventListener('click', function (event) {
+                if (!dropdownType .contains(event.target)) {
+                    dropdownListType.style.display = 'none';
+                }
+            });
+        });
+</script>
+</html>

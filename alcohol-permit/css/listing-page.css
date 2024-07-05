@@ -1,0 +1,129 @@
+
+
+/* =======hot card-listing   */
+.hot-card-listing{
+    padding-top: 60px;
+    padding-bottom: 180px;
+}
+.card-listing-items{
+    max-width: 510px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+     display: flex;
+     gap: 15px
+     ;
+}
+.card-listing-items .cll-first{
+    background-color: #D8D8D8;
+}
+
+.card-listing-items li{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    /* padding: 13px 25px 6px 25px; */
+    border-radius: 7.5px;
+    border: 1.8px solid  
+    rgba(216, 216, 216, 1);
+    background-color: white;
+    
+}
+.card-listing-items li a{
+    display: block;
+    text-decoration: none;
+
+    color: 
+    rgba(0, 0, 0, 1);
+    font-size: 26.25px;
+    font-weight: 400;
+    margin-top: 6px;
+
+
+}
+
+.card-listing-items :nth-child(2).active{
+    border: 1.875px solid rgba(255, 70, 0, 1);
+    color: rgba(255, 70, 0, 1);
+}
+.card-listing-items :nth-child(2).active a{
+    color: rgba(255, 70, 0, 1);
+    font-weight: 500;
+}
+.card-listing-items li svg{
+    margin-bottom: 5px;
+}
+
+
+
+.card-listing-items li a svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lsp-detail{
+    max-width: 1364px;
+    /* background-color: #F4F4F4; */
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 40px 60px;
+}
+.lsp-detail .kno-heading {
+    padding: 0px;
+}
+.ldp-right-content h2::after,
+.ldp-right-content h2::before{
+    content: unset;
+}
+.ldp-right-content h2{
+    text-align: start;
+}
+.lsp-detail .kno-overview-bg{
+    background-color: unset;
+}
+
+.lsp-detail .licen-detail-pop-bg {
+    max-height: 770px;
+    overflow-y: auto; /* Set overflow-y to auto */
+}
+
+/* Customize scrollbar for WebKit browsers */
+.lsp-detail .licen-detail-pop-bg::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+.lsp-detail .licen-detail-pop-bg::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+.lsp-detail .licen-detail-pop-bg::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+    border-radius: 4px; /* Set the border radius of the scrollbar thumb */
+}
+
+.lsp-detail .licen-detail-pop-bg::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Set the color of the scrollbar thumb on hover */
+}
+
+
+
+/* =============media query */
+
+@media (max-width : 767px){
+    .card-listing-items {
+        gap: 10px;
+    }
+    .card-listing-items li a {
+        font-size: 12px;
+    }
+    .card-listing-items li {
+        width: 40px;
+        height: 40px;
+        padding: 14px;
+    }
+}
